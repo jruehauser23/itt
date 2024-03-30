@@ -1,0 +1,1313 @@
+<!DOCTYPE html><html class="no-js" lang="it-IT" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.v="1.2.5.1",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this._interceptClickListeners(this),window.addEventListener("pageshow",e=>{this.persisted=e.persisted,this.everythingLoaded&&this._triggerLastFunctions()}),document.addEventListener("DOMContentLoaded",()=>{this._preconnect3rdParties()}),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}_addUserInteractionListener(e){if(document.hidden){e._triggerListener();return}this.triggerEvents.forEach(t=>window.addEventListener(t,e.userEventHandler,{passive:!0})),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler)}_removeUserInteractionListener(){this.triggerEvents.forEach(e=>window.removeEventListener(e,this.userEventHandler,{passive:!0})),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._disableOtherEventListeners(e.target,!0),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"),this._pendingClickStarted())}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._disableOtherEventListeners(e.target,!1),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this._pendingClickFinished()}_onTouchEnd(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._disableOtherEventListeners(e.target,!1),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation(),this._pendingClickFinished()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach(e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))})}_interceptClickListeners(e){EventTarget.prototype.addEventListenerBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(t,i,r){"click"!==t||e.windowLoaded||i===e.clickHandler||e.interceptedClickListeners.push({target:this,func:i,options:r}),(this||window).addEventListenerBase(t,i,r)}}_disableOtherEventListeners(e,t){this.interceptedClickListeners.forEach(i=>{i.target===e&&(t?e.removeEventListener("click",i.func,i.options):e.addEventListener("click",i.func,i.options))}),e.parentNode!==document.documentElement&&this._disableOtherEventListeners(e.parentNode,t)}_waitForPendingClicks(){return new Promise(e=>{this._isClickPending?this._pendingClickFinished=e:e()})}_pendingClickStarted(){this._isClickPending=!0}_pendingClickFinished(){this._isClickPending=!1}_renameDOMAttribute(e,t,i){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(i,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach(t=>{let i=t.getAttribute("data-rocket-src");if(i&&0!==i.indexOf("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{let r=new URL(i).origin;r!==location.origin&&e.push({src:r,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}catch(n){}}}),e=[...new Map(e.map(e=>[JSON.stringify(e),e])).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(this),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._pendingWebpackRequests(this),await this._triggerWindowLoad()}catch(e){console.error(e)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this._waitForPendingClicks().then(()=>{this._replayClicks()}),this._emptyTrash()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach(e=>{e.hasAttribute("data-rocket-src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)})}async _transformScript(e){if(await this._littleBreath(),!0===e.noModule&&"noModule"in HTMLScriptElement.prototype){e.setAttribute("data-rocket-status","skipped");return}return new Promise(t=>{let i;function r(){(i||e).setAttribute("data-rocket-status","executed"),t()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)i=document.createElement("script"),[...e.attributes].forEach(e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),"data-rocket-src"===t&&(t="src"),i.setAttribute(t,e.nodeValue))}),e.text&&(i.text=e.text),i.hasAttribute("src")?(i.addEventListener("load",r),i.addEventListener("error",function(){i.setAttribute("data-rocket-status","failed"),t()}),setTimeout(()=>{i.isConnected||t()},1)):(i.text=e.text,r()),e.parentNode.replaceChild(i,e);else{let n=e.getAttribute("data-rocket-type"),s=e.getAttribute("data-rocket-src");n?(e.type=n,e.removeAttribute("data-rocket-type")):e.removeAttribute("type"),e.addEventListener("load",r),e.addEventListener("error",function(){e.setAttribute("data-rocket-status","failed"),t()}),s?(e.removeAttribute("data-rocket-src"),e.src=s):e.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(e.text)))}}catch(a){e.setAttribute("data-rocket-status","failed"),t()}})}async _loadScriptsFromList(e){let t=e.shift();return t&&t.isConnected?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var i=document.createDocumentFragment();e.forEach(e=>{let r=e.getAttribute&&e.getAttribute("data-rocket-src")||e.src;if(r){let n=document.createElement("link");n.href=r,n.rel=t,"preconnect"!==t&&(n.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),e.crossOrigin&&(n.crossOrigin=e.crossOrigin),e.integrity&&(n.integrity=e.integrity),i.appendChild(n),this.trash.push(n)}}),document.head.appendChild(i)}_delayEventListeners(e){let t={};function i(i,r){return t[r].eventsToRewrite.indexOf(i)>=0&&!e.everythingLoaded?"rocket-"+i:i}function r(e,r){var n;!t[n=e]&&(t[n]={originalFunctions:{add:n.addEventListener,remove:n.removeEventListener},eventsToRewrite:[]},n.addEventListener=function(){arguments[0]=i(arguments[0],n),t[n].originalFunctions.add.apply(n,arguments)},n.removeEventListener=function(){arguments[0]=i(arguments[0],n),t[n].originalFunctions.remove.apply(n,arguments)}),t[e].eventsToRewrite.push(r)}function n(t,i){let r=t[i];t[i]=null,Object.defineProperty(t,i,{get:()=>r||function(){},set(n){e.everythingLoaded?r=n:t["rocket"+i]=r=n}})}r(document,"DOMContentLoaded"),r(window,"DOMContentLoaded"),r(window,"load"),r(window,"pageshow"),r(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t;function i(t){return e.everythingLoaded?t:t.split(" ").map(e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e).join(" ")}function r(r){if(r&&r.fn&&!e.allJQueries.includes(r)){r.fn.ready=r.fn.init.prototype.ready=function(t){return e.domReadyFired?t.bind(document)(r):document.addEventListener("rocket-DOMContentLoaded",()=>t.bind(document)(r)),r([])};let n=r.fn.on;r.fn.on=r.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(e=>{let t=arguments[0][e];delete arguments[0][e],arguments[0][i(e)]=t})),n.apply(this,arguments),this},e.allJQueries.push(r)}t=r}r(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>t,set(e){r(e)}})}async _pendingWebpackRequests(e){let t=document.querySelector("script[data-webpack]");async function i(){return new Promise(e=>{t.addEventListener("load",e),t.addEventListener("error",e)})}t&&(await i(),await e._requestAnimFrame(),await e._pendingWebpackRequests(e))}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async _triggerWindowLoad(){await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach(e=>e(window).trigger("rocket-jquery-load")),await this._littleBreath();let e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}_triggerLastFunctions(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}_handleDocumentWrite(){let e=new Map;document.write=document.writeln=function(t){let i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+t);let r=document.createRange(),n=i.parentElement,s=e.get(i);void 0===s&&(s=i.nextSibling,e.set(i,s));let a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),n.insertBefore(a,s)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise(e=>setTimeout(e)):new Promise(e=>requestAnimationFrame(e))}_emptyTrash(){this.trash.forEach(e=>e.remove())}static run(){let e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+<title>Casinò Non AAMS » 15+ Migliori &amp; Sicuri Casino Italiani (2024)</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Rubik%3A400%2C400i%2C700&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik%3A400%2C400i%2C700&amp;display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik%3A400%2C400i%2C700&display=swap" /></noscript>
+
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="bingbot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="description" content="Cerchi un Casinò Online non AAMS? ➤ ⭐ 30+ Siti Casino✅ Senza Licenza AAMS (ADM) ⏩ Sicuri &amp; Legali ⚡ Giocare Online!">
+<meta name="keywords" content="casinò online non AAMS,casinò senza licenza AAMS,casinò siti non ADM">
+<link rel="canonical" href="https://it.nonaams.com">
+<link rel="alternate" type="application/rss+xml" href="https://it.nonaams.com/sitemap.xml">
+<meta name="dc.language" content="it-IT">
+<meta name="dc.language.iso" content="it_IT">
+<meta name="dc.publisher" content="Fabrizio Goria">
+<meta name="dc.title" content="Casinò Non AAMS » 15+ Migliori &amp; Sicuri Casino Italiani (2024)">
+<meta name="dc.description" content="Cerchi un Casinò Online non AAMS? ➤ ⭐ 30+ Siti Casino✅ Senza Licenza AAMS (ADM) ⏩ Sicuri &amp; Legali ⚡ Giocare Online!">
+<meta name="dc.date.issued" content="2024-03-28">
+<meta property="og:url" content="https://it.nonaams.com">
+<meta property="og:title" content="Casinò Non AAMS » 15+ Migliori &amp; Sicuri Casino Italiani (2024)">
+<meta property="og:description" content="Cerchi un Casinò Online non AAMS? ➤ ⭐ 30+ Siti Casino✅ Senza Licenza AAMS (ADM) ⏩ Sicuri &amp; Legali ⚡ Giocare Online!">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/casino-non-aams.png">
+<meta property="og:image:width" content="700">
+<meta property="og:image:height" content="700">
+<meta property="og:image:type" content="image/png">
+<meta property="og:site_name" content="Non AAMS Casino">
+<meta property="og:locale" content="it_IT">
+<meta property="twitter:url" content="https://it.nonaams.com">
+<meta property="twitter:title" content="Casinò Non AAMS » 15+ Migliori &amp; Sicuri Casino Italiani (2024)">
+<meta property="twitter:description" content="Cerchi un Casinò Online non AAMS? ➤ ⭐ 30+ Siti Casino✅ Senza Licenza AAMS (ADM) ⏩ Sicuri &amp; Legali ⚡ Giocare Online!">
+<meta property="twitter:image" content="https://it.nonaams.com/wp-content/uploads/2020/10/casino-non-aams.png">
+<meta property="twitter:domain" content="Non AAMS Casino">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:creator" content="@twitter">
+<meta property="twitter:site" content="@twitter">
+<script type="rocketlazyloadscript" async="" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-LMPZNPX9DZ"></script><script type="rocketlazyloadscript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-LMPZNPX9DZ');</script>
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5.0">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//use.fontawesome.com">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="stylesheet" id="aca33b9c04-css" href="css/frontend.min.css" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel="stylesheet" id="poka-vendor-styles-css" href="css/styles-vendor.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="poka-main-styles-css" href="css/styles.min.css" type="text/css" media="all">
+<link data-minify="1" rel="stylesheet" id="child-theme-style-css" href="css/style.css" type="text/css" media="all">
+<link rel="preload" as="font" type="font/woff" crossorigin="anonymous" id="poka-preload-poka-font-css" href="https://it.nonaams.com/wp-content/themes/pokatheme/fonts/poka.woff?v=2.1">
+<link data-minify="1" rel="stylesheet" id="font-awesome-official-css" href="css/all.css" type="text/css" media="all" crossorigin="anonymous">
+<style id="rocket-lazyload-inline-css" type="text/css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(images/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<link data-minify="1" rel="stylesheet" id="font-awesome-official-v4shim-css" href="css/v4-shims.css" type="text/css" media="all" crossorigin="anonymous">
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="pushengage-sdk-init-js-after">
+/* <![CDATA[ */
+(function(w, d) {
+				w.PushEngage = w.PushEngage || [];
+				w._peq = w._peq || [];
+				PushEngage.push(['init', {
+					appId: '5e5a941b-f1d7-4482-97ef-330bcc090dbb'
+				}]);
+				var e = d.createElement('script');
+				e.src = 'https://clientcdn.pushengage.com/sdks/pushengage-web-sdk.js';
+				e.async = true;
+				e.type = 'text/javascript';
+				d.head.appendChild(e);
+			  })(window, document);
+/* ]]> */
+</script>
+<link rel="shortlink" href="https://it.nonaams.com/">
+<link rel="icon" href="images/cropped-non-aams-favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="images/cropped-non-aams-favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="images/cropped-non-aams-favicon-180x180.png">
+<meta name="msapplication-TileImage" content="https://it.nonaams.com/wp-content/uploads/2020/07/cropped-non-aams-favicon-270x270.png">
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript> <link href="https://www.googletagmanager.com" rel="preconnect"></head>
+<body class="home page-template-default page page-id-332 body-header-style2 body-show-breadcrumbs">
+<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+<div id="page-wrapper">
+<header class="head-top">
+<div class="container row mrg0">
+<div class="col-sm-12">
+<form action="https://it.nonaams.com" class="form-inline top-bar-search" method="get">
+<div class="input-group">
+<input type="text" class="form-control" name="s" placeholder="Cerca">
+</div>
+<button type="submit" class="btn"><i class="icon-poka icon-poka-search"></i></button>
+</form>
+
+</div>
+
+</div>
+
+<div class="head-menu clearfix">
+<div class="container">
+<div class="header-row">
+<a href="#mobile-menu" class="trigger-mmenu hidden-lg-up">
+<div class="icon">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<span>Menu</span>
+</a>
+<div class="head-logo header-row__logo" itemscope="" itemtype="http://schema.org/Organization" itemid="#org">
+<meta itemprop="url" content="https://it.nonaams.com">
+<meta itemprop="name" content="Non AAMS Casino">
+<meta itemprop="sameAs" content="https://twitter.com/non_aams">
+<meta itemprop="sameAs" content="https://www.pinterest.it/non_aams/">
+<a href="https://it.nonaams.com" id="logo">
+<img src="images/non-aams.png" alt="Non AAMS" width="200" height="70" class="skip-lazy" itemprop="logo">
+</a>
+</div>
+
+<div class="header-row__menu">
+<ul id="menu-header" class="menu main-menu hidden-md-down"><li id="menu-item-592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-592"><a href="https://it.nonaams.com/siti-scommesse-non-aams/">Siti Scommesse Non AAMS</a>
+<ul class="sub-menu">
+<li id="menu-item-612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-612"><a href="https://it.nonaams.com/siti-scommesse-stranieri/">Siti Scommesse Stranieri – Bookmakers Esteri</a>
+<ul class="sub-menu">
+<li id="menu-item-1409" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409"><a href="https://it.nonaams.com/siti-scommesse-stranieri/nuovi/">Nuovi Siti Scommesse</a></li>
+<li id="menu-item-888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-888"><a href="https://it.nonaams.com/siti-scommesse-stranieri/bonus-senza-deposito/">Scommesse Senza Deposito</a></li>
+<li id="menu-item-1235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235"><a href="https://it.nonaams.com/siti-scommesse-internazionali/">Siti Scommesse Internazionali</a></li>
+<li id="menu-item-596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-596"><a href="https://it.nonaams.com/siti-scommesse-inglesi/">Siti Scommesse Inglesi</a></li>
+<li id="menu-item-1183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1183"><a href="https://it.nonaams.com/siti-scommesse-europei/">Siti Scommesse Europei</a></li>
+<li id="menu-item-2182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2182"><a href="https://it.nonaams.com/siti-scommesse-americani/">Siti Scommesse Americani</a></li>
+<li id="menu-item-2183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2183"><a href="https://it.nonaams.com/siti-scommesse-asiatici/">Siti Scommesse Asiatici</a></li>
+</ul>
+</li>
+<li id="menu-item-4334" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4334"><a href="#">Pagamenti su Siti Scommesse</a>
+<ul class="sub-menu">
+<li id="menu-item-5197" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5197"><a href="#">eWallets</a>
+<ul class="sub-menu">
+<li id="menu-item-5199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5199"><a href="https://it.nonaams.com/siti-scommesse-apple-pay/">Bookmakers con Apple Pay</a></li>
+<li id="menu-item-5200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5200"><a href="https://it.nonaams.com/siti-scommesse-google-pay/">Bookmakers con Google Pay</a></li>
+<li id="menu-item-5201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5201"><a href="https://it.nonaams.com/siti-scommesse-satispay/">Bookmakers con Satispay</a></li>
+<li id="menu-item-771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-771"><a href="https://it.nonaams.com/siti-scommesse-non-aams/paypal/">Bookmakers con PayPal</a></li>
+</ul>
+</li>
+<li id="menu-item-5198" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5198"><a href="#">Carte Bancarie</a>
+<ul class="sub-menu">
+<li id="menu-item-5202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5202"><a href="https://it.nonaams.com/siti-scommesse-carta-di-credito/">Bookmakers con Carta di Credito</a></li>
+<li id="menu-item-5203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5203"><a href="https://it.nonaams.com/siti-scommesse-visa/">Bookmakers con Visa</a></li>
+<li id="menu-item-5204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5204"><a href="https://it.nonaams.com/siti-scommesse-mastercard/">Bookmakers con MasterCard</a></li>
+<li id="menu-item-5206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5206"><a href="https://it.nonaams.com/siti-scommesse-maestro/">Bookmakers con Maestro</a></li>
+<li id="menu-item-1233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1233"><a href="https://it.nonaams.com/siti-scommesse-amex/">Bookmakers con Amex</a></li>
+</ul>
+</li>
+<li id="menu-item-4336" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4336"><a href="https://it.nonaams.com/siti-scommesse-crypto/">Criptovalute</a>
+<ul class="sub-menu">
+<li id="menu-item-1152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1152"><a href="https://it.nonaams.com/siti-scommesse-bitcoin/">Bookmakers con Bitcoin</a></li>
+</ul>
+</li>
+<li id="menu-item-5207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5207"><a href="https://it.nonaams.com/siti-scommesse-carta-prepagata/">Bookmakers con Carta Prepagata</a>
+<ul class="sub-menu">
+<li id="menu-item-5208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5208"><a href="https://it.nonaams.com/siti-scommesse-paysafecard/">Bookmakers con PaySafeCard</a></li>
+<li id="menu-item-5209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5209"><a href="https://it.nonaams.com/siti-scommesse-postepay/">Bookmakers con Postepay</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-887"><a href="https://it.nonaams.com/siti-scommesse-non-aams/bonus-senza-deposito/">Bonus Senza Deposito</a></li>
+<li id="menu-item-1408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1408"><a href="https://it.nonaams.com/siti-scommesse-non-aams/nuovi/">Nuovi Siti Scommesse</a></li>
+<li id="menu-item-1412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1412"><a href="https://it.nonaams.com/siti-scommesse-non-aams/calcio/">Siti Scommesse Calcio Non AAMS</a></li>
+<li id="menu-item-1142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1142"><a href="https://it.nonaams.com/siti-scommesse-non-aams/cosa-si-rischia/">Qual è il Rischio per i Siti non AAMS?</a>
+<ul class="sub-menu">
+<li id="menu-item-1234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1234"><a href="https://it.nonaams.com/siti-scommesse-illegali/">Siti Scommesse Illegali</a></li>
+<li id="menu-item-1414" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1414"><a href="https://it.nonaams.com/siti-scommesse-che-non-pagano/">Siti Scommesse che non Pagano</a></li>
+</ul>
+</li>
+<li id="menu-item-1398" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1398"><a href="https://it.nonaams.com/siti-scommesse-senza-limiti/">Siti Scommesse Senza Limiti</a></li>
+<li id="menu-item-1882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1882"><a href="https://it.nonaams.com/siti-scommesse-con-deposito-minimo/">Siti di Scommesse con Deposito Minimo</a>
+<ul class="sub-menu">
+<li id="menu-item-2187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2187"><a href="https://it.nonaams.com/siti-scommesse-deposito-minimo-1-euro/">Siti di Scommesse con Deposito Minimo di 1 Euro</a></li>
+<li id="menu-item-2188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2188"><a href="https://it.nonaams.com/siti-scommesse-deposito-minimo-2-euro/">Siti di Scommesse con Deposito Minimo di 2 Euro</a></li>
+<li id="menu-item-1883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1883"><a href="https://it.nonaams.com/siti-scommesse-deposito-minimo-5-euro/">Siti di Scommesse con Deposito Minimo di 5 Euro</a></li>
+</ul>
+</li>
+<li id="menu-item-4338" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4338"><a href="#">Siti Scommesse con Puntata Minima</a>
+<ul class="sub-menu">
+<li id="menu-item-4343" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4343"><a href="https://it.nonaams.com/siti-scommesse-da-10-centesimi/">Siti di Scommesse da 10 Centesimi</a></li>
+<li id="menu-item-4342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4342"><a href="https://it.nonaams.com/siti-scommesse-da-20-centesimi/">Siti di Scommesse da 20 Centesimi</a></li>
+<li id="menu-item-4341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4341"><a href="https://it.nonaams.com/siti-scommesse-da-50-centesimi/">Siti di Scommesse da 50 Centesimi</a></li>
+<li id="menu-item-4340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4340"><a href="https://it.nonaams.com/siti-scommesse-puntata-minima-da-1-euro/">Siti Scommesse da 1 Euro</a></li>
+</ul>
+</li>
+<li id="menu-item-2937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2937"><a href="https://it.nonaams.com/migliori-siti-scommesse-in-italia/">Migliori Siti di Scommesse in Italia</a>
+<ul class="sub-menu">
+<li id="menu-item-3033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3033"><a href="https://it.nonaams.com/siti-scommesse-sicuri-in-italia/">Siti Scommesse Sicuri in Italia</a></li>
+<li id="menu-item-3034" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3034"><a href="https://it.nonaams.com/siti-scommesse-legali-in-italia/">Siti Scommesse Legali in Italia</a></li>
+<li id="menu-item-3035" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3035"><a href="https://it.nonaams.com/nuovi-siti-scommesse-in-italia/">Nuovi Siti Scommesse in Italia</a></li>
+<li id="menu-item-3614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3614"><a href="https://it.nonaams.com/siti-scommesse-live-in-italia/">Siti Scommesse Live in Italia</a></li>
+<li id="menu-item-3032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3032"><a href="https://it.nonaams.com/siti-scommesse-mobile-in-italia/">Siti Scommesse Mobile in Italia</a></li>
+<li id="menu-item-3031" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3031"><a href="https://it.nonaams.com/app-siti-scommesse-in-italia/">Migliori App Siti di Scommesse in Italia</a></li>
+<li id="menu-item-3030" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3030"><a href="https://it.nonaams.com/lista-tutti-siti-scommesse-in-italia/">Tutti Siti di Scommesse in Italia</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-709" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-has-children menu-item-709"><a href="/" aria-current="page">Casino Non AAMS</a>
+<ul class="sub-menu">
+<li id="menu-item-611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-611"><a href="https://it.nonaams.com/casino-online-stranieri/">Casinò Online Stranieri</a>
+<ul class="sub-menu">
+<li id="menu-item-889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-889"><a href="https://it.nonaams.com/casino-online-stranieri/bonus-senza-deposito/">Casino Esteri Senza Deposito</a></li>
+<li id="menu-item-610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-610"><a href="https://it.nonaams.com/casino-online-europei/">Casinò Online Europei</a></li>
+<li id="menu-item-1356" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1356"><a href="/casino-online-europei/senza-deposito/">Casinò Europei Senza Deposito</a></li>
+<li id="menu-item-1289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1289"><a href="https://it.nonaams.com/casino-online-inglesi/">Casinò Online Inglesi</a></li>
+<li id="menu-item-2973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2973"><a href="https://it.nonaams.com/casino-online-inglesi/bonus-senza-deposito/">Casino Inglesi Senza Deposito</a></li>
+<li id="menu-item-1966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1966"><a href="https://it.nonaams.com/casino-online-americani/">Casinò Online Americani</a>
+<ul class="sub-menu">
+<li id="menu-item-4333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4333"><a href="https://it.nonaams.com/casino-online-americani/bonus-senza-deposito/">Casinò Americani con Bonus senza Deposito</a></li>
+</ul>
+</li>
+<li id="menu-item-2008" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2008"><a href="https://it.nonaams.com/casino-online-asiatici/">Casinò Online Asiatici</a></li>
+<li id="menu-item-1886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1886"><a href="https://it.nonaams.com/casino-online-non-italiani/">Casinò Online Non Italiani</a></li>
+<li id="menu-item-3704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3704"><a href="https://it.nonaams.com/migliori-casino-online-al-mondo/">Migliori Casino Online al Mondo</a></li>
+<li id="menu-item-791" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-791"><a href="https://it.nonaams.com/casino-online-stranieri/poker/">Siti Esteri di Poker</a></li>
+</ul>
+</li>
+<li id="menu-item-4322" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4322"><a href="#">Pagamenti sui Casino</a>
+<ul class="sub-menu">
+<li id="menu-item-5179" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5179"><a href="#">eWallet</a>
+<ul class="sub-menu">
+<li id="menu-item-5182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5182"><a href="https://it.nonaams.com/casino-klarna/">Casino con Klarna</a></li>
+<li id="menu-item-5183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5183"><a href="https://it.nonaams.com/casino-apple-pay/">Casino con Apple Pay</a></li>
+<li id="menu-item-5184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5184"><a href="https://it.nonaams.com/casino-google-pay/">Casino con Google Pay</a></li>
+<li id="menu-item-5185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5185"><a href="https://it.nonaams.com/casino-astro-pay/">Casino con Astro Pay</a></li>
+<li id="menu-item-4327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4327"><a href="https://it.nonaams.com/casino-satispay/">Casino con Satispay</a></li>
+<li id="menu-item-762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-762"><a href="https://it.nonaams.com/casino-con-paypal-senza-aams/">Casino con PayPal</a></li>
+<li id="menu-item-981" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-981"><a href="https://it.nonaams.com/casino-con-skrill-senza-aams/">Casino con Skrill</a></li>
+</ul>
+</li>
+<li id="menu-item-5180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5180"><a href="#">Carte Bancarie</a>
+<ul class="sub-menu">
+<li id="menu-item-5190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5190"><a href="https://it.nonaams.com/casino-visa/">Casino con Visa</a></li>
+<li id="menu-item-5191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5191"><a href="https://it.nonaams.com/casino-mastercard/">Casino con MasterCard</a></li>
+<li id="menu-item-5192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5192"><a href="https://it.nonaams.com/casino-maestro/">Casino con Maestro</a></li>
+<li id="menu-item-1232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1232"><a href="https://it.nonaams.com/casino-amex/">Casino con Amex</a></li>
+<li id="menu-item-5193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5193"><a href="https://it.nonaams.com/casino-bancomat/">Casino con Bancomat</a></li>
+</ul>
+</li>
+<li id="menu-item-5181" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5181"><a href="#">Carte Prepagate</a>
+<ul class="sub-menu">
+<li id="menu-item-5186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5186"><a href="https://it.nonaams.com/casino-paysafecard/">Casino con PaySafeCard</a>
+<ul class="sub-menu">
+<li id="menu-item-1006" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1006"><a href="https://it.nonaams.com/casino-con-paysafecard-senza-aams/">Casinò PaySafeCard</a></li>
+</ul>
+</li>
+<li id="menu-item-5187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5187"><a href="https://it.nonaams.com/casino-postepay/">Casino con Postepay</a>
+<ul class="sub-menu">
+<li id="menu-item-4326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4326"><a href="https://it.nonaams.com/casino-con-postepay-non-aams/">Casinò PostePay</a></li>
+</ul>
+</li>
+<li id="menu-item-5188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5188"><a href="https://it.nonaams.com/casino-neosurf/">Casino con Neosurf</a></li>
+<li id="menu-item-5189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5189"><a href="https://it.nonaams.com/casino-credito-telefonico/">Casino con Credito Telefonico</a></li>
+</ul>
+</li>
+<li id="menu-item-5194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5194"><a href="https://it.nonaams.com/casino-bonifico-bancario/">Casino con Bonifico Bancario</a></li>
+<li id="menu-item-5195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5195"><a href="https://it.nonaams.com/casino-online-crypto/">Casino con Crypto</a>
+<ul class="sub-menu">
+<li id="menu-item-1024" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1024"><a href="https://it.nonaams.com/casino-bitcoin/">Casino con Bitcoin</a></li>
+<li id="menu-item-5196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5196"><a href="https://it.nonaams.com/casino-ethereum/">Casino con Ethereum</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-4325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4325"><a href="https://it.nonaams.com/casino-online-che-pagano-di-piu/">Casino Online che Pagano di Più</a></li>
+<li id="menu-item-886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-886"><a href="https://it.nonaams.com/casino-bonus-senza-deposito/">Bonus Senza Deposito</a></li>
+<li id="menu-item-4324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4324"><a href="https://it.nonaams.com/casino-che-pagano-subito/">Casino che Pagano Subito</a></li>
+<li id="menu-item-1293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1293"><a href="https://it.nonaams.com/casino-senza-documenti/">Casinò Senza Documenti</a>
+<ul class="sub-menu">
+<li id="menu-item-4328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4328"><a href="https://it.nonaams.com/casino-senza-documenti/bonus-senza-deposito/">Casino Online con Bonus senza Documenti</a></li>
+</ul>
+</li>
+<li id="menu-item-2029" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2029"><a href="https://it.nonaams.com/casino-con-deposito-minimo/">Casinò con Deposito Minimo</a>
+<ul class="sub-menu">
+<li id="menu-item-2074" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2074"><a href="https://it.nonaams.com/casino-deposito-minimo-1-euro/">Casinò con Deposito Minimo di 1 Euro</a></li>
+<li id="menu-item-2073" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2073"><a href="https://it.nonaams.com/casino-deposito-minimo-2-euro/">Casinò con Deposito Minimo di 2 Euro</a></li>
+<li id="menu-item-2030" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2030"><a href="https://it.nonaams.com/casino-deposito-minimo-5-euro/">Casinò con Deposito Minimo di 5 Euro</a></li>
+<li id="menu-item-2089" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2089"><a href="https://it.nonaams.com/casino-deposito-minimo-10-euro/">Casinò con Deposito Minimo di 10 Euro</a></li>
+</ul>
+</li>
+<li id="menu-item-4330" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4330"><a href="#">Casino con Puntata Minima</a>
+<ul class="sub-menu">
+<li id="menu-item-4332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4332"><a href="https://it.nonaams.com/casino-puntata-minima-1-centesimo/">Casinò con Puntata Minima di 1 Centesimo</a></li>
+<li id="menu-item-4331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4331"><a href="https://it.nonaams.com/casino-puntata-minima-10-centesimi/">Casino con Puntata Minima di 10 Centesimi</a></li>
+</ul>
+</li>
+<li id="menu-item-2945" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2945"><a href="https://it.nonaams.com/migliori-casino-online-in-italia/">Migliori Casino Online in Italia</a>
+<ul class="sub-menu">
+<li id="menu-item-2942" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2942"><a href="https://it.nonaams.com/casino-online-soldi-veri-in-italia/">Casino Online con Soldi Veri in Italia</a></li>
+<li id="menu-item-2938" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2938"><a href="https://it.nonaams.com/casino-online-sicuri-in-italia/">Casino Online Sicuri in Italia</a></li>
+<li id="menu-item-2939" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2939"><a href="https://it.nonaams.com/casino-online-legali-in-italia/">Casino Online Legali in Italia</a></li>
+<li id="menu-item-2944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2944"><a href="https://it.nonaams.com/lista-tutti-casino-online-in-italia/">Tutti Casino Online in Italia</a></li>
+<li id="menu-item-2941" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2941"><a href="https://it.nonaams.com/live-casino-online-in-italia/">Live Casino Online in Italia</a></li>
+<li id="menu-item-2940" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2940"><a href="https://it.nonaams.com/app-casino-online-in-italia/">App Casino Online in Italia</a></li>
+<li id="menu-item-2946" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2946"><a href="https://it.nonaams.com/mobile-casino-online-in-italia/">Mobile Casino Online in Italia</a></li>
+<li id="menu-item-2943" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2943"><a href="https://it.nonaams.com/nuovi-casino-online-in-italia/">Nuovi Casino Online in Italia</a></li>
+</ul>
+</li>
+<li id="menu-item-4709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4709"><a href="https://it.nonaams.com/giochi-casino-online-soldi-veri-in-italia/">Giochi da Casino con Soldi Veri</a>
+<ul class="sub-menu">
+<li id="menu-item-4708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4708"><a href="https://it.nonaams.com/slot-online-soldi-veri-in-italia/">Giochi Slot Soldi Veri in Italia</a></li>
+<li id="menu-item-4712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4712"><a href="https://it.nonaams.com/bingo-online-soldi-veri-in-italia/">Giochi Bingo Soldi Veri in Italia</a></li>
+<li id="menu-item-4711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4711"><a href="https://it.nonaams.com/poker-online-soldi-veri-in-italia/">Giochi Poker Soldi Veri in Italia</a></li>
+<li id="menu-item-4713" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4713"><a href="https://it.nonaams.com/blackjack-online-soldi-veri-in-italia/">Giochi Blackjack Soldi Veri in Italia</a></li>
+<li id="menu-item-4710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4710"><a href="https://it.nonaams.com/roulette-online-soldi-veri-in-italia/">Giochi Roulette Soldi Veri in Italia</a></li>
+<li id="menu-item-4714" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4714"><a href="https://it.nonaams.com/baccarat-online-soldi-veri-in-italia/">Giochi Baccarat Soldi Veri in Italia</a></li>
+<li id="menu-item-4707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4707"><a href="https://it.nonaams.com/gratta-e-vinci-online-soldi-veri-in-italia/">Giochi Gratta e Vinci Soldi Veri in Italia</a></li>
+<li id="menu-item-710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-710"><a href="https://it.nonaams.com/giochi-senza-aams/">Giochi Non AAMS</a>
+<ul class="sub-menu">
+<li id="menu-item-3860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3860"><a href="https://it.nonaams.com/chicken-gioco-del-pollo/">Gioco del Pollo</a></li>
+<li id="menu-item-712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-712"><a href="https://it.nonaams.com/giochi-senza-aams/slot/">Slot Non AAMS</a></li>
+<li id="menu-item-711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-711"><a href="https://it.nonaams.com/giochi-senza-aams/poker/">Poker Non AAMS</a></li>
+<li id="menu-item-928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-928"><a href="https://it.nonaams.com/giochi-senza-aams/bingo/">Bingo Non AAMS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-5210" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5210"><a href="#">Software dei Giochi</a>
+<ul class="sub-menu">
+<li id="menu-item-5211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5211"><a href="https://it.nonaams.com/casino-microgaming/">Casino con Microgaming</a></li>
+<li id="menu-item-5218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5218"><a href="https://it.nonaams.com/casino-evolution-gaming/">Casino con Evolution Gaming</a></li>
+<li id="menu-item-5217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5217"><a href="https://it.nonaams.com/casino-betsoft/">Casino con Betsoft</a></li>
+<li id="menu-item-5216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5216"><a href="https://it.nonaams.com/casino-play-n-go/">Casino con Play’n Go</a></li>
+<li id="menu-item-5212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5212"><a href="https://it.nonaams.com/casino-yggdrasil/">Casino con Yggdrasil</a></li>
+<li id="menu-item-5213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5213"><a href="https://it.nonaams.com/casino-netent/">Casino con Netent</a></li>
+<li id="menu-item-5214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5214"><a href="https://it.nonaams.com/casino-playtech/">Casino con Playtech</a></li>
+<li id="menu-item-5215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5215"><a href="https://it.nonaams.com/casino-pragmatic-play/">Casino con Pragmatic Play</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-565"><a href="https://it.nonaams.com/come-rimuovere-autoesclusione-aams/">Come Rimuovere Autoesclusione AAMS?</a></li>
+<li id="menu-item-543" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-543"><a href="/recensione/">Recensione</a>
+<ul class="sub-menu">
+<li id="menu-item-627" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-627"><a href="/recensione/rabona/">Rabona Casino</a></li>
+<li id="menu-item-626" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-626"><a href="/recensione/22bet/">22Bet Casino</a></li>
+<li id="menu-item-3096" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3096"><a href="https://it.nonaams.com/recensione/great-win-casino/">Great Win Casino</a></li>
+<li id="menu-item-622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-622"><a href="/recensione/librabet/">LibraBet Casino</a></li>
+<li id="menu-item-2952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2952"><a href="https://it.nonaams.com/recensione/oh-my-spins-casino/">Oh My Spins Casino</a></li>
+<li id="menu-item-628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-628"><a href="/recensione/lsbet/">LsBet Casino</a></li>
+<li id="menu-item-1809" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1809"><a href="/recensione/reloadbet/">ReloadBet Casino</a></li>
+<li id="menu-item-1810" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1810"><a href="/recensione/sportaza-casino/">Sportaza Casino</a></li>
+<li id="menu-item-5441" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5441"><a href="/recensione/gratowin-casino/">GratoWin Casino</a></li>
+<li id="menu-item-1812" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1812"><a href="/recensione/20bet-casino/">20Bet Casino</a></li>
+<li id="menu-item-1813" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1813"><a href="/recensione/national-casino/">National Casino</a></li>
+<li id="menu-item-1885" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1885"><a href="/recensione/wazamba-casino/">Wazamba Casino</a></li>
+</ul>
+</li>
+</ul> <nav id="mobile-menu">
+<ul id="menu-header-1" class="mobmenu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-592"><a href="https://it.nonaams.com/siti-scommesse-non-aams/">Siti Scommesse Non AAMS</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-612"><a href="https://it.nonaams.com/siti-scommesse-stranieri/">Siti Scommesse Stranieri – Bookmakers Esteri</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409"><a href="https://it.nonaams.com/siti-scommesse-stranieri/nuovi/">Nuovi Siti Scommesse</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-888"><a href="https://it.nonaams.com/siti-scommesse-stranieri/bonus-senza-deposito/">Scommesse Senza Deposito</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235"><a href="https://it.nonaams.com/siti-scommesse-internazionali/">Siti Scommesse Internazionali</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-596"><a href="https://it.nonaams.com/siti-scommesse-inglesi/">Siti Scommesse Inglesi</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1183"><a href="https://it.nonaams.com/siti-scommesse-europei/">Siti Scommesse Europei</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2182"><a href="https://it.nonaams.com/siti-scommesse-americani/">Siti Scommesse Americani</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2183"><a href="https://it.nonaams.com/siti-scommesse-asiatici/">Siti Scommesse Asiatici</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4334"><a href="#">Pagamenti su Siti Scommesse</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5197"><a href="#">eWallets</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5199"><a href="https://it.nonaams.com/siti-scommesse-apple-pay/">Bookmakers con Apple Pay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5200"><a href="https://it.nonaams.com/siti-scommesse-google-pay/">Bookmakers con Google Pay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5201"><a href="https://it.nonaams.com/siti-scommesse-satispay/">Bookmakers con Satispay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-771"><a href="https://it.nonaams.com/siti-scommesse-non-aams/paypal/">Bookmakers con PayPal</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5198"><a href="#">Carte Bancarie</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5202"><a href="https://it.nonaams.com/siti-scommesse-carta-di-credito/">Bookmakers con Carta di Credito</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5203"><a href="https://it.nonaams.com/siti-scommesse-visa/">Bookmakers con Visa</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5204"><a href="https://it.nonaams.com/siti-scommesse-mastercard/">Bookmakers con MasterCard</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5206"><a href="https://it.nonaams.com/siti-scommesse-maestro/">Bookmakers con Maestro</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1233"><a href="https://it.nonaams.com/siti-scommesse-amex/">Bookmakers con Amex</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4336"><a href="https://it.nonaams.com/siti-scommesse-crypto/">Criptovalute</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1152"><a href="https://it.nonaams.com/siti-scommesse-bitcoin/">Bookmakers con Bitcoin</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5207"><a href="https://it.nonaams.com/siti-scommesse-carta-prepagata/">Bookmakers con Carta Prepagata</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5208"><a href="https://it.nonaams.com/siti-scommesse-paysafecard/">Bookmakers con PaySafeCard</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5209"><a href="https://it.nonaams.com/siti-scommesse-postepay/">Bookmakers con Postepay</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-887"><a href="https://it.nonaams.com/siti-scommesse-non-aams/bonus-senza-deposito/">Bonus Senza Deposito</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1408"><a href="https://it.nonaams.com/siti-scommesse-non-aams/nuovi/">Nuovi Siti Scommesse</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1412"><a href="https://it.nonaams.com/siti-scommesse-non-aams/calcio/">Siti Scommesse Calcio Non AAMS</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1142"><a href="https://it.nonaams.com/siti-scommesse-non-aams/cosa-si-rischia/">Qual è il Rischio per i Siti non AAMS?</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1234"><a href="https://it.nonaams.com/siti-scommesse-illegali/">Siti Scommesse Illegali</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1414"><a href="https://it.nonaams.com/siti-scommesse-che-non-pagano/">Siti Scommesse che non Pagano</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1398"><a href="https://it.nonaams.com/siti-scommesse-senza-limiti/">Siti Scommesse Senza Limiti</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1882"><a href="https://it.nonaams.com/siti-scommesse-con-deposito-minimo/">Siti di Scommesse con Deposito Minimo</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2187"><a href="https://it.nonaams.com/siti-scommesse-deposito-minimo-1-euro/">Siti di Scommesse con Deposito Minimo di 1 Euro</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2188"><a href="https://it.nonaams.com/siti-scommesse-deposito-minimo-2-euro/">Siti di Scommesse con Deposito Minimo di 2 Euro</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1883"><a href="https://it.nonaams.com/siti-scommesse-deposito-minimo-5-euro/">Siti di Scommesse con Deposito Minimo di 5 Euro</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4338"><a href="#">Siti Scommesse con Puntata Minima</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4343"><a href="https://it.nonaams.com/siti-scommesse-da-10-centesimi/">Siti di Scommesse da 10 Centesimi</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4342"><a href="https://it.nonaams.com/siti-scommesse-da-20-centesimi/">Siti di Scommesse da 20 Centesimi</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4341"><a href="https://it.nonaams.com/siti-scommesse-da-50-centesimi/">Siti di Scommesse da 50 Centesimi</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4340"><a href="https://it.nonaams.com/siti-scommesse-puntata-minima-da-1-euro/">Siti Scommesse da 1 Euro</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2937"><a href="https://it.nonaams.com/migliori-siti-scommesse-in-italia/">Migliori Siti di Scommesse in Italia</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3033"><a href="https://it.nonaams.com/siti-scommesse-sicuri-in-italia/">Siti Scommesse Sicuri in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3034"><a href="https://it.nonaams.com/siti-scommesse-legali-in-italia/">Siti Scommesse Legali in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3035"><a href="https://it.nonaams.com/nuovi-siti-scommesse-in-italia/">Nuovi Siti Scommesse in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3614"><a href="https://it.nonaams.com/siti-scommesse-live-in-italia/">Siti Scommesse Live in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3032"><a href="https://it.nonaams.com/siti-scommesse-mobile-in-italia/">Siti Scommesse Mobile in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3031"><a href="https://it.nonaams.com/app-siti-scommesse-in-italia/">Migliori App Siti di Scommesse in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3030"><a href="https://it.nonaams.com/lista-tutti-siti-scommesse-in-italia/">Tutti Siti di Scommesse in Italia</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-has-children menu-item-709"><a href="/" aria-current="page">Casino Non AAMS</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-611"><a href="https://it.nonaams.com/casino-online-stranieri/">Casinò Online Stranieri</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-889"><a href="https://it.nonaams.com/casino-online-stranieri/bonus-senza-deposito/">Casino Esteri Senza Deposito</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-610"><a href="https://it.nonaams.com/casino-online-europei/">Casinò Online Europei</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1356"><a href="/casino-online-europei/senza-deposito/">Casinò Europei Senza Deposito</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1289"><a href="https://it.nonaams.com/casino-online-inglesi/">Casinò Online Inglesi</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2973"><a href="https://it.nonaams.com/casino-online-inglesi/bonus-senza-deposito/">Casino Inglesi Senza Deposito</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1966"><a href="https://it.nonaams.com/casino-online-americani/">Casinò Online Americani</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4333"><a href="https://it.nonaams.com/casino-online-americani/bonus-senza-deposito/">Casinò Americani con Bonus senza Deposito</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2008"><a href="https://it.nonaams.com/casino-online-asiatici/">Casinò Online Asiatici</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1886"><a href="https://it.nonaams.com/casino-online-non-italiani/">Casinò Online Non Italiani</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3704"><a href="https://it.nonaams.com/migliori-casino-online-al-mondo/">Migliori Casino Online al Mondo</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-791"><a href="https://it.nonaams.com/casino-online-stranieri/poker/">Siti Esteri di Poker</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4322"><a href="#">Pagamenti sui Casino</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5179"><a href="#">eWallet</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5182"><a href="https://it.nonaams.com/casino-klarna/">Casino con Klarna</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5183"><a href="https://it.nonaams.com/casino-apple-pay/">Casino con Apple Pay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5184"><a href="https://it.nonaams.com/casino-google-pay/">Casino con Google Pay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5185"><a href="https://it.nonaams.com/casino-astro-pay/">Casino con Astro Pay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4327"><a href="https://it.nonaams.com/casino-satispay/">Casino con Satispay</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-762"><a href="https://it.nonaams.com/casino-con-paypal-senza-aams/">Casino con PayPal</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-981"><a href="https://it.nonaams.com/casino-con-skrill-senza-aams/">Casino con Skrill</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5180"><a href="#">Carte Bancarie</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5190"><a href="https://it.nonaams.com/casino-visa/">Casino con Visa</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5191"><a href="https://it.nonaams.com/casino-mastercard/">Casino con MasterCard</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5192"><a href="https://it.nonaams.com/casino-maestro/">Casino con Maestro</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1232"><a href="https://it.nonaams.com/casino-amex/">Casino con Amex</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5193"><a href="https://it.nonaams.com/casino-bancomat/">Casino con Bancomat</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5181"><a href="#">Carte Prepagate</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5186"><a href="https://it.nonaams.com/casino-paysafecard/">Casino con PaySafeCard</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1006"><a href="https://it.nonaams.com/casino-con-paysafecard-senza-aams/">Casinò PaySafeCard</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5187"><a href="https://it.nonaams.com/casino-postepay/">Casino con Postepay</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4326"><a href="https://it.nonaams.com/casino-con-postepay-non-aams/">Casinò PostePay</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5188"><a href="https://it.nonaams.com/casino-neosurf/">Casino con Neosurf</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5189"><a href="https://it.nonaams.com/casino-credito-telefonico/">Casino con Credito Telefonico</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5194"><a href="https://it.nonaams.com/casino-bonifico-bancario/">Casino con Bonifico Bancario</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5195"><a href="https://it.nonaams.com/casino-online-crypto/">Casino con Crypto</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1024"><a href="https://it.nonaams.com/casino-bitcoin/">Casino con Bitcoin</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5196"><a href="https://it.nonaams.com/casino-ethereum/">Casino con Ethereum</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4325"><a href="https://it.nonaams.com/casino-online-che-pagano-di-piu/">Casino Online che Pagano di Più</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-886"><a href="https://it.nonaams.com/casino-bonus-senza-deposito/">Bonus Senza Deposito</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4324"><a href="https://it.nonaams.com/casino-che-pagano-subito/">Casino che Pagano Subito</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1293"><a href="https://it.nonaams.com/casino-senza-documenti/">Casinò Senza Documenti</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4328"><a href="https://it.nonaams.com/casino-senza-documenti/bonus-senza-deposito/">Casino Online con Bonus senza Documenti</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2029"><a href="https://it.nonaams.com/casino-con-deposito-minimo/">Casinò con Deposito Minimo</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2074"><a href="https://it.nonaams.com/casino-deposito-minimo-1-euro/">Casinò con Deposito Minimo di 1 Euro</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2073"><a href="https://it.nonaams.com/casino-deposito-minimo-2-euro/">Casinò con Deposito Minimo di 2 Euro</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2030"><a href="https://it.nonaams.com/casino-deposito-minimo-5-euro/">Casinò con Deposito Minimo di 5 Euro</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2089"><a href="https://it.nonaams.com/casino-deposito-minimo-10-euro/">Casinò con Deposito Minimo di 10 Euro</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4330"><a href="#">Casino con Puntata Minima</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4332"><a href="https://it.nonaams.com/casino-puntata-minima-1-centesimo/">Casinò con Puntata Minima di 1 Centesimo</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4331"><a href="https://it.nonaams.com/casino-puntata-minima-10-centesimi/">Casino con Puntata Minima di 10 Centesimi</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2945"><a href="https://it.nonaams.com/migliori-casino-online-in-italia/">Migliori Casino Online in Italia</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2942"><a href="https://it.nonaams.com/casino-online-soldi-veri-in-italia/">Casino Online con Soldi Veri in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2938"><a href="https://it.nonaams.com/casino-online-sicuri-in-italia/">Casino Online Sicuri in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2939"><a href="https://it.nonaams.com/casino-online-legali-in-italia/">Casino Online Legali in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2944"><a href="https://it.nonaams.com/lista-tutti-casino-online-in-italia/">Tutti Casino Online in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2941"><a href="https://it.nonaams.com/live-casino-online-in-italia/">Live Casino Online in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2940"><a href="https://it.nonaams.com/app-casino-online-in-italia/">App Casino Online in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2946"><a href="https://it.nonaams.com/mobile-casino-online-in-italia/">Mobile Casino Online in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2943"><a href="https://it.nonaams.com/nuovi-casino-online-in-italia/">Nuovi Casino Online in Italia</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4709"><a href="https://it.nonaams.com/giochi-casino-online-soldi-veri-in-italia/">Giochi da Casino con Soldi Veri</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4708"><a href="https://it.nonaams.com/slot-online-soldi-veri-in-italia/">Giochi Slot Soldi Veri in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4712"><a href="https://it.nonaams.com/bingo-online-soldi-veri-in-italia/">Giochi Bingo Soldi Veri in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4711"><a href="https://it.nonaams.com/poker-online-soldi-veri-in-italia/">Giochi Poker Soldi Veri in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4713"><a href="https://it.nonaams.com/blackjack-online-soldi-veri-in-italia/">Giochi Blackjack Soldi Veri in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4710"><a href="https://it.nonaams.com/roulette-online-soldi-veri-in-italia/">Giochi Roulette Soldi Veri in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4714"><a href="https://it.nonaams.com/baccarat-online-soldi-veri-in-italia/">Giochi Baccarat Soldi Veri in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4707"><a href="https://it.nonaams.com/gratta-e-vinci-online-soldi-veri-in-italia/">Giochi Gratta e Vinci Soldi Veri in Italia</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-710"><a href="https://it.nonaams.com/giochi-senza-aams/">Giochi Non AAMS</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3860"><a href="https://it.nonaams.com/chicken-gioco-del-pollo/">Gioco del Pollo</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-712"><a href="https://it.nonaams.com/giochi-senza-aams/slot/">Slot Non AAMS</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-711"><a href="https://it.nonaams.com/giochi-senza-aams/poker/">Poker Non AAMS</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-928"><a href="https://it.nonaams.com/giochi-senza-aams/bingo/">Bingo Non AAMS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5210"><a href="#">Software dei Giochi</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5211"><a href="https://it.nonaams.com/casino-microgaming/">Casino con Microgaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5218"><a href="https://it.nonaams.com/casino-evolution-gaming/">Casino con Evolution Gaming</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5217"><a href="https://it.nonaams.com/casino-betsoft/">Casino con Betsoft</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5216"><a href="https://it.nonaams.com/casino-play-n-go/">Casino con Play’n Go</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5212"><a href="https://it.nonaams.com/casino-yggdrasil/">Casino con Yggdrasil</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5213"><a href="https://it.nonaams.com/casino-netent/">Casino con Netent</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5214"><a href="https://it.nonaams.com/casino-playtech/">Casino con Playtech</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5215"><a href="https://it.nonaams.com/casino-pragmatic-play/">Casino con Pragmatic Play</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-565"><a href="https://it.nonaams.com/come-rimuovere-autoesclusione-aams/">Come Rimuovere Autoesclusione AAMS?</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-543"><a href="/recensione/">Recensione</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-627"><a href="/recensione/rabona/">Rabona Casino</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-626"><a href="/recensione/22bet/">22Bet Casino</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3096"><a href="https://it.nonaams.com/recensione/great-win-casino/">Great Win Casino</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-622"><a href="/recensione/librabet/">LibraBet Casino</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2952"><a href="https://it.nonaams.com/recensione/oh-my-spins-casino/">Oh My Spins Casino</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-628"><a href="/recensione/lsbet/">LsBet Casino</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1809"><a href="/recensione/reloadbet/">ReloadBet Casino</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1810"><a href="/recensione/sportaza-casino/">Sportaza Casino</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5441"><a href="/recensione/gratowin-casino/">GratoWin Casino</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1812"><a href="/recensione/20bet-casino/">20Bet Casino</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1813"><a href="/recensione/national-casino/">National Casino</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1885"><a href="/recensione/wazamba-casino/">Wazamba Casino</a></li>
+</ul>
+</li>
+</ul> </nav>
+</div>
+</div>
+</div>
+
+</div>
+
+</header>
+<main id="main" itemscope="" itemtype="http://schema.org/FAQPage" itemid="#main">
+<meta itemprop="url" content="https://it.nonaams.com">
+<meta itemprop="inLanguage" content="it-IT">
+<meta itemprop="datePublished" content="2017-06-16T10:33:08+00:00">
+<link itemprop="publisher" href="#org">
+<p class="date-wrap container">Aggiornato: <time itemprop="dateModified" datetime="2024-03-05T14:51:16+00:00">Marzo 5th, 2024</time></p>
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-area main-col">
+<h1 itemprop="name">Casinò Non AAMS</h1>
+<div class="section text-area" style="background-position:center top; background-size:auto; background-repeat:no-repeat; ">
+<img fetchpriority="high" decoding="async" src="images/casino-non-aams.png" alt="casinò non AAMS" width="350" height="350" class="aligncenter size-full wp-image-724 skip-lazy" srcset="images/casino-non-aams.png 700w, images/casino-non-aams-300x300.png 300w, images/casino-non-aams-150x150.png 150w, images/casino-non-aams-55x55.png 55w" sizes="(max-width: 350px) 100vw, 350px" itemprop="primaryImageOfPage thumbnailUrl">
+<p id="description" itemprop="description">Stai cercando un casinò online non AAMS per giocatori italiani? I nostri esperti di NonAAMS.com hanno preparato una lista dei siti stranieri. 22Bet Casino, Rabona Casino e LibraBet Casino sono i migliori casino non AAMS nel 2024, che offrono slot giochi sicuri e legali. Questi operatori non sono sotto <a href="https://www.adm.gov.it/portale/giochi" rel="noopener" target="_blank">ADM</a>, ma forniscono dei servizi di gambling per italiani.</p>
+<p>I brand sul nostro sito operano senza licenza AAMS e aiutano a <a href="/come-rimuovere-autoesclusione-aams/">revocare l’autoesclusione</a> in pochi passi. Inoltre, hanno la licenza del regolatore estero – Curacao eGaming. È un’autorit�&nbsp; affidabile per giocatori italiani e internazionali. Elenco dei migliori casinò non AAMS nel Marzo 2024:</p>
+<ol>
+<li>Rabona Casino</li>
+<li>Sportaza Casino</li>
+<li>BankonBet Casino</li>
+<li>1bet Casino</li>
+<li>Frumzi Casino</li>
+<li>Spinanga Casino</li>
+<li>Sportuna Casino</li>
+<li>Wazamba Casino</li>
+<li>Wintopia Casino</li>
+<li>Flappy Casino</li>
+</ol>
+</div>
+<div class="section text-area" style="padding:20px 0; background-position:center top; background-size:auto; background-repeat:no-repeat; ">
+<h2 id="tutti">Migliori Casinò Online Non AAMS nel 2024</h2>
+<ul class="table-s2"><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">1</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/sportaza/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="Sportaza Casino" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/04/sportaza-casino-italia.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2023/04/sportaza-casino-italia.png" class="attachment-full size-full wp-post-image" alt="Sportaza Casino" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">Sportaza Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span></div><div class="item-ratings-num">108 valutazioni</div> <a href="https://it.nonaams.com/recensione/sportaza-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>100% + 200 Giri Gratis </span></div><div class="col-features"><ul><li>Ampia Gamma di Giochi Divertenti</li><li>€20 Deposito Minimo</li><li>Assistenza clienti 24 su 24</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/sportaza/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al Sportaza Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">2</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/amunra/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="Amunra Casino Recensione" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2022/09/amunra-casino.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2022/09/amunra-casino.png" class="attachment-full size-full wp-post-image" alt="Amunra Casino Recensione" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">AmunRa Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star"><i class="icon-poka icon-poka-half-star"></i></span></div><div class="item-ratings-num">85 valutazioni</div> <a href="https://it.nonaams.com/recensione/amunra-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>100% Fino a €500</span></div><div class="col-features"><ul><li>Bonus sui Primi 4 Depositi</li><li>Bitcoin Giochi da Casino</li><li>Deposito Minimo 20€</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/amunra/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al AmunRa Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">3</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/spinanga-casino/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="Spinanga Casino Recensione" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/12/spinanga-casino.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2023/12/spinanga-casino.png" class="attachment-full size-full wp-post-image" alt="Spinanga Casino Recensione" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">Spinanga Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span></div><div class="item-ratings-num">19 valutazioni</div> <a href="https://it.nonaams.com/recensione/spinanga-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>Bonus Aumentato Con Codice Promo “NONAAMS”</span></div><div class="col-features"><ul><li>Licenza di Curaçao iGaming</li><li>VIP Programma</li><li>Demo Versione di Giochi</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/spinanga-casino/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al Spinanga Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">4</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/pribet/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="Pribet Casino Recensione" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2022/07/Pribet-Casino.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2022/07/Pribet-Casino.png" class="attachment-full size-full wp-post-image" alt="Pribet Casino Recensione" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">PriBet Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span></div><div class="item-ratings-num">59 valutazioni</div> <a href="https://it.nonaams.com/recensione/pribet-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>100% Fino a €200</span></div><div class="col-features"><ul><li>Licenza Estera Valida</li><li>€10-20 Deposito Minimo</li><li>Supporto 24/7 100% Sicuro</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/pribet/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al PriBet Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">5</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/rabona/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="Rabona Casino" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/08/rabona-italia.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2020/08/rabona-italia.png" class="attachment-full size-full wp-post-image" alt="Rabona Casino" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">Rabona Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span></div><div class="item-ratings-num">134 valutazioni</div> <a href="https://it.nonaams.com/recensione/rabona/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>150% Fino a €500</span></div><div class="col-features"><ul><li>Piattaforma Semplice e Intuitiva</li><li>Accetta Tutti i Tipi di Pagamento più Diffusi </li><li>Ottima Assistenza Clienti 24/7</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/rabona/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al Rabona Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">6</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/frumzi-casino/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="Frumzi Casino Recensione" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/10/frumzi-casino.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2023/10/frumzi-casino.png" class="attachment-full size-full wp-post-image" alt="Frumzi Casino Recensione" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">Frumzi Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star"><i class="icon-poka icon-poka-half-star"></i></span></div><div class="item-ratings-num">24 valutazioni</div> <a href="https://it.nonaams.com/recensione/frumzi-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>100% Fino a 500€</span></div><div class="col-features"><ul><li>Licenza di Governo Curaçao</li><li> 300+ Giochi di Play’n Go</li><li> Deposito Tramite Klarna</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/frumzi-casino/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al Frumzi Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">7</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/bankonbet-casino/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="Bankonbet Casino Recensione" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/01/bankonbet-casino.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2023/01/bankonbet-casino.png" class="attachment-full size-full wp-post-image" alt="Bankonbet Casino Recensione" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">Bankonbet Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star"><i class="icon-poka icon-poka-half-star"></i></span></div><div class="item-ratings-num">92 valutazioni</div> <a href="https://it.nonaams.com/recensione/bankonbet-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>150% Fino a €450</span></div><div class="col-features"><ul><li>Puntata 1 Centesimo per Giochi</li><li>Deposito con Satispay</li><li>25% di Live Cashback</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/bankonbet-casino/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al Bankonbet Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">8</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/22bet-casino/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="22Bet" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/08/22bet-italia.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2020/08/22bet-italia.png" class="attachment-full size-full wp-post-image" alt="22Bet" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">22Bet Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star"><i class="icon-poka icon-poka-empty-star"></i></span></div><div class="item-ratings-num">40 valutazioni</div> <a href="https://it.nonaams.com/recensione/22bet/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>100% Fino a €300</span></div><div class="col-features"><ul><li>Possibilit�&nbsp; di Giocare Tramite App</li><li>Requisiti Minimi di Deposito</li><li>Metodi di Pagamento Diversificati</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/22bet-casino/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al 22Bet Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">9</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/20bet-casino/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="20Bet Casino" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2021/01/20bet-italia.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2021/01/20bet-italia.png" class="attachment-full size-full wp-post-image" alt="20Bet Casino" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">20Bet Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span></div><div class="item-ratings-num">49 valutazioni</div> <a href="https://it.nonaams.com/recensione/20bet-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>100% Fino a €120</span></div><div class="col-features"><ul><li>Promozioni Giornaliere</li><li>€10 Deposito Minimo</li><li>App Disponibile da Giocare</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/20bet-casino/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al 20Bet Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">10</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/5gringos/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="5 Gringos Casino" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2021/03/5-gringos-casino-italia.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2021/03/5-gringos-casino-italia.png" class="attachment-full size-full wp-post-image" alt="5 Gringos Casino" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">5 Gringos Casinò</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star"><i class="icon-poka icon-poka-half-star"></i></span></div><div class="item-ratings-num">28 valutazioni</div> <a href="https://it.nonaams.com/recensione/5-gringos-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>100% Fino a €500</span></div><div class="col-features"><ul><li>Un Buon Casinò per Vincere</li><li>€20 di Deposito Minimo</li><li>Guadagnare e Usare i Punti </li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/5gringos/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al 5 Gringos Casinò</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">11</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/sg-casino/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="Casino SG Recensione" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/07/casino-sg-online.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2023/07/casino-sg-online.png" class="attachment-full size-full wp-post-image" alt="Casino SG Recensione" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">SG Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star"><i class="icon-poka icon-poka-empty-star"></i></span></div><div class="item-ratings-num">22 valutazioni</div> <a href="https://it.nonaams.com/recensione/sg-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>150% fino a €500 + 200 FS</span></div><div class="col-features"><ul><li>Possibilit�&nbsp; Scommettere su Eventi Preferiti</li><li>Piattaforma Moderna e Innovativa</li><li>Pagamenti Veloci</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/sg-casino/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al SG Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">12</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/olympusbet/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="Recensione Olympusbet Casino" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/03/olympusbet-1.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2023/03/olympusbet-1.png" class="attachment-full size-full wp-post-image" alt="Recensione Olympusbet Casino" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">OlympusBet Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span></div><div class="item-ratings-num">53 valutazioni</div> <a href="https://it.nonaams.com/recensione/olympusbet-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>100% Fino a €500</span></div><div class="col-features"><ul><li>Licenza di Governo Curaçao</li><li>Minimo Deposito 10€</li><li>Giochi con Live Dealer</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/olympusbet/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al OlympusBet Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">13</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/slotimo-casino/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="Slotimo Casino Recensione" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/12/slotimo-casino.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2023/12/slotimo-casino.png" class="attachment-full size-full wp-post-image" alt="Slotimo Casino Recensione" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">Slotimo Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span></div><div class="item-ratings-num">21 valutazioni</div> <a href="https://it.nonaams.com/recensione/slotimo-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>Pacchetto di Benvenuto 4 in 1 Fino a 1000 €</span></div><div class="col-features"><ul><li>Pagamenti tramite Maestro</li><li>Giochi di Microgaming</li><li>Licenza di Curaçao</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/slotimo-casino/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al Slotimo Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">14</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/sportuna-casino/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="Sportuna Recensione" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/11/casino-sportuna.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2023/11/casino-sportuna.png" class="attachment-full size-full wp-post-image" alt="Sportuna Recensione" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">Sportuna Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star"><i class="icon-poka icon-poka-half-star"></i></span></div><div class="item-ratings-num">20 valutazioni</div> <a href="https://it.nonaams.com/recensione/sportuna-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>100% Fino a 500€ + 200 Giri Gratis</span></div><div class="col-features"><ul><li>Licenza di Curaçao</li><li>Pagamenti con Postepay</li><li>Demo Versioni di Giochi</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/sportuna-casino/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al Sportuna Casino</span></a></div><div class="row-terms"></div></div></li><li class="item"><div class="item-row"><div class="col-logo"> <div class="rank-num">15</div> <div class="logo-box"><a href="https://it.nonaams.com/visita/1bet-casino/" rel="nofollow" target="_blank" class="d-lg-block"><img width="300" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" class="attachment-full size-full wp-post-image" alt="1bet Casino Recensione" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2024/02/1bet-casino.png"><noscript><img width="300" height="150" src="https://it.nonaams.com/wp-content/uploads/2024/02/1bet-casino.png" class="attachment-full size-full wp-post-image" alt="1bet Casino Recensione" decoding="async" /></noscript></a> </div></div><div class="col-rating"><div class="item-casino-name">1Bet Casino</div><div class="rating"><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span><span class="star full-star"><i class="icon-poka icon-poka-full-star"></i></span></div><div class="item-ratings-num">20 valutazioni</div> <a href="https://it.nonaams.com/recensione/1bet-casino/" class="btn-read-more">Recensione</a></div><div class="col-bonus"><span>500€ Bonus Benvenuto!</span></div><div class="col-features"><ul><li>App per Android</li><li>5 Livelli di VIP Club</li><li>Deposito Minimo 10 Euro</li></ul></div><div class="col-btn"><a href="https://it.nonaams.com/visita/1bet-casino/" target="_blank" rel="nofollow" class="btn btn--green btn--full d-lg-block"><span class="btn-p1">Visita il Sito</span><span class="btn-p2">Vai al 1Bet Casino</span></a></div><div class="row-terms"></div></div></li></ul><div class="buttons-gtoup"><button data-page="1" data-atts="eyJzaG9ydGNvZGUiOiJ0YWJsZV9saXN0X3YyIiwibnVtIjoiIiwiY2F0IjoiIiwic29ydCI6ImRhdGUiLCJsb2dvX2FmZl9saW5rIjoidHJ1ZSIsInJldmlld3MiOiI0NjcsIDQ2NiwgNzk0LCA2NzIsIDkwMCwgNDc0LCA4MzMsIDY3NiwgODMwLCA2NzgsIDY4MCwgNDcxLCA0NzMsIDgzNSIsInNob3dfY291bnRlciI6InRydWUiLCJzaG93X2ZyZWVzcGlucyI6ImZhbHNlIiwic2hvd19yYXRpbmciOiJ0cnVlIiwic2hvd190YWJsZV9zb3J0aW5nIjoiZmFsc2UiLCJjc3NfY2xhc3MiOiIiLCJhZmZpbGlhdGVfdXJsX2tleSI6ImNhc2lubyIsInRhYmxlX2lkIjoiMTA0OCIsInBhZ2UiOjEsImFqYXhfcGFnaW5hdGlvbiI6ImZhbHNlIiwicGFyZW50X3Bvc3RfaWQiOjMzMn0=" class="shortcode-button btn btn--green btn--full d-lg-block table-load-more" style="background-color:#559f3d; ">SHOW MORE</button></div>
+</div>
+<div class="section">
+<div class="anchor-menu">
+<div class="anchor-menu-title">Contenuto</div>
+<ul class="features-small__row col-md-10">
+<li class="">
+<a href="#tutti">
+<i class="fas fa-pizza-slice" style="color: #dd9933;"></i>
+Tutti Casinò Online Non AAMS </a>
+</li>
+<li class="">
+<a href="#classificazione">
+<i class="fas fa-pizza-slice" style="color: #dd9933;"></i>
+Classificazione dei Casinò Online Non AAMS </a>
+</li>
+<li class="">
+<a href="#migliori">
+<i class="fas fa-pizza-slice" style="color: #dd9933;"></i>
+Migliori Casinò Senza Licenza AAMS </a>
+</li>
+<li class="">
+<a href="#altri">
+<i class="fas fa-pizza-slice" style="color: #dd9933;"></i>
+Altri Buoni Casinò Italiani Senza Licenza </a>
+</li>
+<li class="">
+<a href="#caratteristiche">
+<i class="fas fa-pizza-slice" style="color: #dd9933;"></i>
+Caratteristiche dei Casinò Online Non AAMS </a>
+</li>
+<li class="">
+<a href="#giochi">
+<i class="fas fa-pizza-slice" style="color: #dd9933;"></i>
+Giochi più Popolari sui Casinò Non AAMS </a>
+</li>
+<li class="">
+<a href="#pagamenti">
+<i class="fas fa-pizza-slice" style="color: #dd9933;"></i>
+Metodi di Pagamento Accettati </a>
+</li>
+<li class="">
+<a href="#">
+<i class="fas fa-pizza-slice" style="color: #dd9933;"></i>
+Come Giocare Sul Casino Online Non AAMS </a>
+</li>
+<li class="">
+<a href="#depositi">
+<i class="fas fa-pizza-slice" style="color: #dd9933;"></i>
+Depositi Minimi Disponibili </a>
+</li>
+<li class="">
+<a href="#faq">
+<i class="fas fa-pizza-slice" style="color: #dd9933;"></i>
+Domande Frequenti </a>
+</li>
+</ul>
+</div>
+</div>
+<div class="section text-area" style="background-position:center top; background-size:auto; background-repeat:no-repeat; ">
+<h2>Lista Casino Non AAMS: Top Siti</h2>
+<ol>
+<li>Rabona Casino – Buona Scelta di Giochi</li>
+<li>AmunRa Casino – Nella Top di Siti Casinò non ADM</li>
+<li>Spinanga Casino – Bonus di Benvenuto Generoso</li>
+<li>22Bet Casino – Casino Senza ADM Sicuro</li>
+<li>Wintopia Casino – Tra i Migliori Casino per gli Italiani</li>
+<li>Red Dice Casino – Ottimi Condizioni di Gioco</li>
+<li>Sportaza Casino – Tra Migliori Casino non AAMS</li>
+<li>Frumzi Casino – Perfetto per Giocare Online</li>
+<li>MyStake Casino – Buon Sito senza Licenza Italiana</li>
+<li>1bet Casino – Casino senza AAMS Sicuro</li>
+</ol> </div>
+<div class="section text-area" style="background-position:center top; background-size:auto; background-repeat:no-repeat; ">
+<h2 id="classificazione">Come Classifichiamo i Casino Non AAMS Sicuri (Non ADM)</h2>
+<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20350'%3E%3C/svg%3E" alt="come classifichiamo i casinò online non AAMS sicuri" class="alignleft size-full" width="350" height="350" wp-image-970"="" data-lazy-srcset="https://it.nonaams.com/wp-content/uploads/2020/12/siti-non-aams.png 700w, https://it.nonaams.com/wp-content/uploads/2020/12/siti-non-aams-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2020/12/siti-non-aams-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2020/12/siti-non-aams-55x55.png 55w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/12/siti-non-aams.png"><noscript><img decoding="async" src="https://it.nonaams.com/wp-content/uploads/2020/12/siti-non-aams.png" alt="come classifichiamo i casinò online non AAMS sicuri" class="alignleft size-full" width="350" height="350" wp-image-970" srcset="https://it.nonaams.com/wp-content/uploads/2020/12/siti-non-aams.png 700w, https://it.nonaams.com/wp-content/uploads/2020/12/siti-non-aams-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2020/12/siti-non-aams-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2020/12/siti-non-aams-55x55.png 55w" sizes="(max-width: 350px) 100vw, 350px" /></noscript>
+<p>Il processo seguito dai nostri esperti si articola in diverse fasi, considerando molteplici fattori. Per proporre solo operatori affidabili e con prodotti di qualit�&nbsp;, ci sono degli elementi di valutazione imprescindibili. Questi ci consentono di individuare e proporre solo i migliori casino senza AAMS. Ecco alcuni dei capisaldi nelle nostre analisi:</p>
+<h3>Accessibile ai Residenti Italiani</h3>
+<p>Dovendovi accedere dall’Italia, il primo criterio di scelta è proprio la possibilit�&nbsp; di accedere al portale in questione dal Bel Paese. Molti siti, nonostante siano reputati tra i <a href="/migliori-casino-online-in-italia/">migliori casino online italiani</a>, potrebbero essere oscurati o accessibili solo con un VPN. Noi proponiamo sempre e solo portali utilizzabili da chiunque, senza la necessit�&nbsp; di utilizzare altri mezzi, se non un normale browser.</p>
+<h3>Sezione Scommesse Sportive</h3>
+<p>La maggior parte dei giocatori italiani sono appassionati di sport, soprattutto di calcio. Inoltre, l’integrazione di questa opzione richiede più documenti e controlli KYC che fondamentalmente filtrano i marchi illegali. Diamo priorit�&nbsp; ai casinò non ADM che danno la possibilit�&nbsp; di scommettere. Se siete interessati ai <a href="/siti-scommesse-non-aams/">siti scommesse non AAMS</a>, abbiamo una pagina dedicata.</p>
+<h3>Reputazione al di Fuori Dell’Italia</h3>
+<p>Tutti questi casinò online operano anche su altri mercati. Accolgono giocatori d’azzardo provenienti da diversi paesi, tra cui Germania, Svezia, Inghilterra, ecc. Il nostro team di NonAAMS.com controlla se i giocatori esteri di questi <a href="/casino-online-stranieri/">casinò stranieri che accettano italiani</a> hanno avuto un’esperienza negativa. E solo dopo, aggiungiamo questo operatore al nostro sito.</p>
+<h3>Offerte Bonus Gratuite Senza AAMS</h3>
+<p>Sappiamo che nessuno vuole rischiare e depositare denaro prima di testare il casinò. Ecco perché chiediamo ai <a href="/casino-bonus-senza-deposito/">casinò non AAMS con bonus senza deposito</a> di fornire promozioni esclusive per i lettori del nostro sito. Potete reclamarle in qualsiasi momento e giocare a certi giochi gratuitamente. In questo modo è possibile testare il marchio e giocare senza dubbi.</p>
+</div>
+<div class="section mini-reviews text-area">
+<h2 class="mini-reviews-title" id="migliori">Top Casinò Senza Licenza AAMS nel Marzo 2024</h2>
+<div class="overflow-scroll">
+<table class="simple-table">
+<tbody>
+<tr>
+<td><strong></strong></td>
+<td><strong>Casinò Non AAMS</strong></td>
+<td><strong>Bonus di Benvenuto</strong></td>
+<td><strong>Caratteristiche</strong></td>
+<td><strong>Rating del Casino</strong></td>
+</tr>
+<tr>
+<td>#1</td>
+<td>Rabona Casino</td>
+<td>100% Fino a €500</td>
+<td>Migliori Giochi</td>
+<td>9,5/10</td>
+</tr>
+<tr>
+<td>#2</td>
+<td>22Bet Casino</td>
+<td>100% Fino a €300</td>
+<td>Deposita 1€ e Ottieni dei Giri</td>
+<td>9/10</td>
+</tr>
+<tr>
+<td>#3</td>
+<td>BankonBet Casino</td>
+<td>100% Fino a €500</td>
+<td>Scelta di Slot non AAMS</td>
+<td>9/10</td>
+</tr>
+<tr>
+<td>#4</td>
+<td>Sportaza Casino</td>
+<td>100% Fino a €500</td>
+<td>Casino Legale</td>
+<td>9/10</td>
+</tr>
+<tr>
+<td>#5</td>
+<td>Neon 54 Casino</td>
+<td>100% Fino a €500</td>
+<td>Affidabile e Sicuro</td>
+<td>9/10</td>
+</tr>
+<tr>
+<td>#6</td>
+<td>Oh My Spins Casino</td>
+<td>100% Fino a €150</td>
+<td>Registrazione Legale</td>
+<td>8,5/10</td>
+</tr>
+<tr>
+<td>#7</td>
+<td>WinsPark Casino</td>
+<td>100% Fino a €100</td>
+<td>Buoni Bonus</td>
+<td>8,5/10</td>
+</tr>
+<tr>
+<td>#8</td>
+<td>Alf Casino</td>
+<td>100% Fino a €500</td>
+<td>Promozioni Gratuite</td>
+<td>8/10</td>
+</tr>
+<tr>
+<td>#9</td>
+<td>Playamo Casino</td>
+<td>100% Fino a €100</td>
+<td>Supporto Eccellente</td>
+<td>8/10</td>
+</tr>
+<tr>
+<td>#10</td>
+<td>LibraBet Casino</td>
+<td>100% Fino a €500</td>
+<td>Sezione Sport</td>
+<td>8/10</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>La lista casino online non AAMS raccomandabili potrebbe contenere decine e decine di esempi. In questa breve guida, abbiamo cercato di selezionare una mezza dozzina di opzioni, le migliori oggi a disposizione per i giocatori italiani intenzionati a sfidare players da tutto il mondo, attraverso i casinò online internazionali. Ecco quindi le nostre scelte dei migliori casinò senza licenza AAMS (ADM) in cui oggi è possibile giocare:</p>
+<div class="mini-item">
+<div class="row">
+<div class="col-md-5">
+<span class="count">1</span>
+<div class="imgbox">
+<a href="https://it.nonaams.com/visita/rabona/" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" alt="Rabona Casino" width="300" height="150" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/08/rabona-italia.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2020/08/rabona-italia.png" alt="Rabona Casino" width="300" height="150" loading="lazy" decoding="async"></noscript></a>
+</div>
+</div>
+<div class="col-md-7 boxleft">
+<h3>Rabona Casino</h3>
+<p>150% Fino a €500</p>
+<a href="https://it.nonaams.com/visita/rabona/" target="_blank" rel="nofollow" class="btn btn--full btn--green d-lg-block">Visita il Sito<span class="poka-icon"><i class="icon-poka icon-poka-solid-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="desc">
+<p>Il <a href="/recensione/rabona/">Rabona Casino</a> tra migliori casino non AAMS sicuri presenti al momento sul mercato. Facilmente accessibile anche dall’Italia, è un portale per lo più dedicato al betting. Tuttavia, l’offerta dell’operatore include una sezione casinò molto completa. Tra i prodotti disponibili si trovano molteplici slot, giochi da tavolo e arcade. Disponibili anche svariati tavoli con croupier dal vivo.</p>
+<p>Rabona è parte di un gruppo provvisto di regolare licenza Curacao, che negli ultimi anni si è guadagnato la fiducia di migliaia di giocatori in giro per il mondo. Come per altri operatori no ADM, una delle caratteristiche più interessanti sono le promozioni.</p> </div>
+</div>
+<div class="mini-item">
+<div class="row">
+<div class="col-md-5">
+<span class="count">2</span>
+<div class="imgbox">
+<a href="https://it.nonaams.com/visita/oh-my-spins/" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" alt="Oh My Spins Casino Recensione" width="300" height="150" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2022/05/Oh-My-Spins-Casino.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2022/05/Oh-My-Spins-Casino.png" alt="Oh My Spins Casino Recensione" width="300" height="150" loading="lazy" decoding="async"></noscript></a>
+</div>
+</div>
+<div class="col-md-7 boxleft">
+<h3>Oh My Spins Casino</h3>
+<p>100% Fino a €500</p>
+<a href="https://it.nonaams.com/visita/oh-my-spins/" target="_blank" rel="nofollow" class="btn btn--full btn--green d-lg-block">Visita il Sito<span class="poka-icon"><i class="icon-poka icon-poka-solid-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="desc">
+<p>Il <a href="/recensione/oh-my-spins-casino/">Oh My Spins Casino</a> è un casinò online sicuro non AAMS che ogni italiano dovrebbe assolutamente provare. Vi si possono trovare molti sviluppatori di giochi di fiducia che anche le marche con licenza hanno come Netent, Evolution Gaming e Playtech.</p>
+<p>Inoltre, Oh My Spins Casino ha una piattaforma di scommesse sportive estesa, quindi gli appassionati di sport non dovrebbero passare a nessun altro operatore. Il marchio offre così tanti bonus e promozioni giornaliere che non vi annoierete. L’unico inconveniente è un lungo modulo di registrazione, ma vale la pena di iscriversi lì.</p>
+</div>
+</div>
+<div class="mini-item">
+<div class="row">
+<div class="col-md-5">
+<span class="count">3</span>
+<div class="imgbox">
+<a href="https://it.nonaams.com/visita/bankonbet-casino/" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" alt="Bankonbet Casino Recensione" width="300" height="150" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/01/bankonbet-casino.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2023/01/bankonbet-casino.png" alt="Bankonbet Casino Recensione" width="300" height="150" loading="lazy" decoding="async"></noscript></a>
+</div>
+</div>
+<div class="col-md-7 boxleft">
+<h3>Bankonbet Casino</h3>
+<p>100% Fino a €500</p>
+<a href="https://it.nonaams.com/visita/bankonbet-casino/" target="_blank" rel="nofollow" class="btn btn--full btn--green d-lg-block">Visita il Sito<span class="poka-icon"><i class="icon-poka icon-poka-solid-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="desc">
+<p>Il <a href="/recensione/bankonbet-casino/">Bankonbet Casino</a> è spesso considerato il miglior casino no ADM, grazie alla sua proposta completa a 360°.Infatti, è uno degli operatori che offre più variet�&nbsp; ai propri clienti. All’interno del catalogo si possono trovare slot, tra cui: Gates of Hades, Book of Dead e Starburst. Presenti anche diversi jackpot games e giochi da tavolo.</p>
+<p>A rendere Bankonbet un ottimo operatore legale per giocatori italiani, c’è anche la sezione dedicata ai casino games live. Qui ci si può intrattenere con molteplici varianti di poker, blackjack, roulette e game show.</p> </div>
+</div>
+<div class="mini-item">
+<div class="row">
+<div class="col-md-5">
+<span class="count">4</span>
+<div class="imgbox">
+<a href="https://it.nonaams.com/visita/sportaza/" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" alt="Sportaza Casino" width="300" height="150" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/04/sportaza-casino-italia.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2023/04/sportaza-casino-italia.png" alt="Sportaza Casino" width="300" height="150" loading="lazy" decoding="async"></noscript></a>
+</div>
+</div>
+<div class="col-md-7 boxleft">
+<h3>Sportaza Casino</h3>
+<p>100% Fino a €500 + 200FS</p>
+<a href="https://it.nonaams.com/visita/sportaza/" target="_blank" rel="nofollow" class="btn btn--full btn--green d-lg-block">Visita il Sito<span class="poka-icon"><i class="icon-poka icon-poka-solid-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="desc">
+<p>Il <a href="/recensione/sportaza-casino/">Sportaza Casino</a> un altro sito che nella top di siti casino senza AAMS va inserito d’obbligo. Anche in questo caso, si tratta di un operatore con certificazione Curacao, molto conosciuto e apprezzato dagli utenti. La sua sezione casinò è ricca di prodotti, tra cui 190+ giochi da tavolo e arcade.</p>
+<p>Su Sportaza è anche possibile giocare alle slot machine senza licenza italiana, di cui molte sono sviluppate dai top provider dell’industria iGaming. Possiamo citare: Play’n Go, Microgaming, NetEnt e Yggdrasil. Quelle più popolari sulla piattaforma sono: It’s Shark Time, Aztec Sun e Spinomenal Universe. La sezione live, invece, include più varianti di roulette, blackjack, baccarat e poker.</p>
+</div>
+</div>
+<div class="mini-item">
+<div class="row">
+<div class="col-md-5">
+<span class="count">5</span>
+<div class="imgbox">
+<a href="https://it.nonaams.com/visita/cadoola-casino/" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" alt="Cadoola Casino" width="300" height="150" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/08/cadoola-casino-italia.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2020/08/cadoola-casino-italia.png" alt="Cadoola Casino" width="300" height="150" loading="lazy" decoding="async"></noscript></a>
+</div>
+</div>
+<div class="col-md-7 boxleft">
+<h3>Cadoola Casino</h3>
+<p>120% Fino a €240</p>
+<a href="https://it.nonaams.com/visita/cadoola-casino/" target="_blank" rel="nofollow" class="btn btn--full btn--green d-lg-block">Visita il Sito<span class="poka-icon"><i class="icon-poka icon-poka-solid-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="desc">
+<p>Il <a href="/recensione/cadoola-casino/">Cadoola Casino</a> è un nuovo casinò online senza licenza AAMS. Ha sede fuori dall’Italia e non segue le leggi locali. I giocatori italiani possono entrare in questo casinò con pochi semplici passi e iniziare a giocare con soldi veri.</p>
+<p>Tutti i nostri esperti dicono che Cadoola non ha una grande collezione di giochi dal vivo. Se ti piace il gioco d’azzardo con il croupier, è meglio unirsi ad un altro marchio. D’altra parte, su questa piattaforma, puoi essere un membro del club VIP e ricevere premi giornalieri.</p> </div>
+</div>
+<div class="mini-item">
+<div class="row">
+<div class="col-md-5">
+<span class="count">6</span>
+<div class="imgbox">
+<a href="https://it.nonaams.com/visita/librabet-bookmaker/" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" alt="LibraBet" width="300" height="150" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/08/librabet-italia.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2020/08/librabet-italia.png" alt="LibraBet" width="300" height="150" loading="lazy" decoding="async"></noscript></a>
+</div>
+</div>
+<div class="col-md-7 boxleft">
+<h3>LibraBet Casino</h3>
+<p>150% Fino a €500</p>
+<a href="https://it.nonaams.com/visita/librabet-bookmaker/" target="_blank" rel="nofollow" class="btn btn--full btn--green d-lg-block">Visita il Sito<span class="poka-icon"><i class="icon-poka icon-poka-solid-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="desc">
+<p>Il <a href="/recensione/librabet/">LibraBet Casino</a> è un gioco d’azzardo affidabile e molto popolare in Italia. Non è regolamentato dall’AAMS ma fornisce giochi sicuri e pagamenti veloci. Ha una propria auto-esclusione per cui si è in mani sicure e si possono stabilire dei limiti in qualsiasi momento.</p>
+<p>Nel caso in cui preferiate i bonus giornalieri del casinò e i pagamenti criptati, LibraBet è la scelta perfetta per voi. Ha anche una chat dal vivo e un supporto telefonico per gli europei in modo da poterli contattare in qualsiasi momento.</p>
+</div>
+</div>
+<div class="mini-item">
+<div class="row">
+<div class="col-md-5">
+<span class="count">7</span>
+<div class="imgbox">
+<a href="https://it.nonaams.com/visita/playamo/" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" alt="Playamo Casino" width="300" height="150" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/11/playamo-casino-italia.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2020/11/playamo-casino-italia.png" alt="Playamo Casino" width="300" height="150" loading="lazy" decoding="async"></noscript></a>
+</div>
+</div>
+<div class="col-md-7 boxleft">
+<h3>Playamo Casino</h3>
+<p>100% Fino a €100</p>
+<a href="https://it.nonaams.com/visita/playamo/" target="_blank" rel="nofollow" class="btn btn--full btn--green d-lg-block">Visita il Sito<span class="poka-icon"><i class="icon-poka icon-poka-solid-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="desc">
+<p>Il <a href="/recensione/playamo-casino/">Playamo Casino</a> è uno dei casinò più rinomati al mondo. Quindi non è un segreto che molti italiani l’hanno gi�&nbsp; provato. Non ha ottenuto la licenza AAMS, ma permette ai giocatori italiani di iscriversi e giocare online.</p>
+<p>Con la sua esperienza e le sue connessioni, Playamo ha integrato molti sviluppatori di software che altri operatori di gioco d’azzardo non possono. E’ estremamente trasparente con tutti i visitatori e mostra le informazioni relative all’azienda e alla licenza.</p> </div>
+</div>
+<div class="mini-item">
+<div class="row">
+<div class="col-md-5">
+<span class="count">8</span>
+<div class="imgbox">
+<a href="https://it.nonaams.com/visita/20bet-casino/" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" alt="20Bet Casino" width="300" height="150" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2021/01/20bet-italia.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2021/01/20bet-italia.png" alt="20Bet Casino" width="300" height="150" loading="lazy" decoding="async"></noscript></a>
+</div>
+</div>
+<div class="col-md-7 boxleft">
+<h3>20Bet Casino</h3>
+<p>100% Fino a €120</p>
+<a href="https://it.nonaams.com/visita/20bet-casino/" target="_blank" rel="nofollow" class="btn btn--full btn--green d-lg-block">Visita il Sito<span class="poka-icon"><i class="icon-poka icon-poka-solid-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="desc">
+<p>Il <a href="/recensione/20bet-casino/">20Bet Casino</a> rientra nell’elenco dei casinò non aams sicuri, è nuovissimo, infatti è stato creato nel 2020, dall’azienda TechSolutions group N.V, ha la regolare licenza di Curacao.</p>
+<p>Tra i vantaggi di 20Bet Casino: un’ampia variet�&nbsp; di giochi, forniti dai migliori provider come Microgaming o EvolutionGaming, un’assistenza clienti disponibile 24 ore su 24 e 7 giorni su 7. Tra gli svantaggi di questo casinò invece: il bonus senza deposito non è presente, alcuni paesi non sono accettati, ad esempio i giocatori del Regno Unito ma i giocatori italiani sono ben accettati, è possibile visualizzare il sito web in ligua italiana e avere un’assistenza clienti in lingua Italiana.</p> </div>
+</div>
+<div class="mini-item">
+<div class="row">
+<div class="col-md-5">
+<span class="count">9</span>
+<div class="imgbox">
+<a href="https://it.nonaams.com/visita/22bet-casino/" target="_blank" rel="nofollow"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20150'%3E%3C/svg%3E" alt="22Bet" width="300" height="150" decoding="async" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/08/22bet-italia.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2020/08/22bet-italia.png" alt="22Bet" width="300" height="150" loading="lazy" decoding="async"></noscript></a>
+</div>
+</div>
+<div class="col-md-7 boxleft">
+<h3>22Bet Casino</h3>
+<p>100% Fino a 300€</p>
+<a href="https://it.nonaams.com/visita/22bet-casino/" target="_blank" rel="nofollow" class="btn btn--full btn--green d-lg-block">Visita il Sito<span class="poka-icon"><i class="icon-poka icon-poka-solid-arrow-right"></i></span></a>
+</div>
+</div>
+<div class="desc">
+<p>Il <a href="/recensione/22bet/">22Bet Casino</a> è l’ultimo casino non ADM nella lista dei migliori siti per giocare online disponibili al pubblico italiano. In possesso di licenza Curacao, è stato fondato nel 2017 e da allora la sua popolarit�&nbsp; non ha fatto altro che crescere. Sempre più conosciuto e utilizzato dagli italiani, gli utenti nostrani lo scelgono soprattutto per il ricco catalogo di prodotti offerti.</p>
+<p>Molto completa la sezione Live, in cui ci si può accomodare a dei tavoli per giocare a blackjack, poker, baccarat e roulette in diverse varianti. All’interno del portfolio si trovano anche alcune delle migliori slot online non AAMS, come Big Wild Buffalo, Athena’s Glory e Black Wolf.</p>
+</div>
+</div>
+</div>
+<div class="section text-area" style="background-position:center top; background-size:auto; background-repeat:no-repeat; ">
+<h2 id="altri">Altri Top Casino Non AAMS Affidabili</h2>
+<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20400'%3E%3C/svg%3E" alt="buoni casinò online non AAMS" width="800" height="400" class="aligncenter size-full wp-image-1806" data-lazy-srcset="https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams.png 1200w, https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams-300x150.png 300w, https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams-1024x512.png 1024w, https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams-768x384.png 768w, https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams-360x180.png 360w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams.png"><noscript><img decoding="async" src="https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams.png" alt="buoni casinò online non AAMS" width="800" height="400" class="aligncenter size-full wp-image-1806" srcset="https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams.png 1200w, https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams-300x150.png 300w, https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams-1024x512.png 1024w, https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams-768x384.png 768w, https://it.nonaams.com/wp-content/uploads/2021/09/buoni-casino-online-non-aams-360x180.png 360w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>
+<p>Quelli citati in precedenza si aggiudicano un posto nella classifica dei migliori operatori non autorizzati dall’ADM. Tuttavia, non vuol dire che siano gli unici portali senza licenza italiana sicuri su cui intrattenersi. Se i siti citati non sono quello che si cerca, o se si è gi�&nbsp; loro assidui frequentatori, avere più alternative può solo essere positivo. Ecco, quindi, una lista di altri top casinò non AAMS affidabili da provare:</p>
+<ul class="style3 features-small__row features-small ">
+<li class="features-small__el steps-header__item"><a href="/recensione/22bet/" class="fa fa-solid fa-dice">22Bet Casino</a></li>
+<li class="features-small__el steps-header__item"><a href="/recensione/reloadbet/" class="fa fa-solid fa-dice">ReloadBet Casino</a></li>
+<li class="features-small__el steps-header__item"><a href="recensione/wazamba-casino/" class="fa fa-solid fa-dice">Wazamba Casino</a></li>
+<li class="features-small__el steps-header__item"><a href="/recensione/lsbet/" class="fa fa-solid fa-dice">LSBet Casino</a></li>
+<li class="features-small__el steps-header__item"><a href="/recensione/zodiacbet-casino/" class="fa fa-solid fa-dice">ZodiacBet Casino</a></li>
+<li class="features-small__el steps-header__item"><a href="/recensione/national-casino/" class="fa fa-solid fa-dice">National Casino</a></li>
+</ul>
+</div>
+<div class="section text-area" style="background-position:center top; background-size:auto; background-repeat:no-repeat; ">
+<h2 id="caratteristiche">Caratteristiche dei Casinò Online Non AAMS Legali</h2>
+<table class="simple-table"><caption>Informazioni sui Casinò Online Non AAMS</caption>
+<tbody>
+<tr>
+<td><strong>📌 Numero di Casinò Non AAMS</strong></td>
+<td>20+</td>
+</tr>
+<tr>
+<td><strong>📌 Tipi di Casinò Senza AAMS</strong></td>
+<td>Nuovo, Live, Mobile, Stranieri</td>
+</tr>
+<tr>
+<td><strong>📌 Autoesclusione AAMS</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>📌 Alternativa di Licenza ADM</strong></td>
+<td>Curaçao eGaming</td>
+</tr>
+<tr>
+<td><strong>📌 Miglior Casinò Online nel Marzo 2024</strong></td>
+<td>Sportaza Casino</td>
+</tr>
+</tbody>
+</table>
+<p>I migliori casinò non AAMS hanno dalla loro parte molti vantaggi: bonus di benvenuto invitanti, jackpot e quotazioni al di sopra della media del mercato, un’infinit�&nbsp; di giochi, la possibilit�&nbsp; di utilizzarli direttamente dal proprio smartphone. Da non sottovalutare poi <a href="https://www.statista.com/statistics/1116226/value-of-player-losses-in-the-online-gambling-market-in-italy-by-game/" rel="noopener" target="_blank">la possibilit�&nbsp; di giocare in molti modi differenti</a>: tante le piattaforme che accettano anche criptovalute, a partire da Bitcoin, diventata oggi una merce ancora più rara e perciò ambita.</p>
+<h3 style="text-align: center;">Vantaggi dei Casinò non AAMS Affidabili</h3>
+<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="pro dei siti casino senza licenza AAMS affidabili" width="200" height="200" class="alignleft size-full wp-image-714" data-lazy-srcset="https://it.nonaams.com/wp-content/uploads/2020/10/pro.png 500w, https://it.nonaams.com/wp-content/uploads/2020/10/pro-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2020/10/pro-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2020/10/pro-55x55.png 55w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/10/pro.png"><noscript><img decoding="async" src="https://it.nonaams.com/wp-content/uploads/2020/10/pro.png" alt="pro dei siti casino senza licenza AAMS affidabili" width="200" height="200" class="alignleft size-full wp-image-714" srcset="https://it.nonaams.com/wp-content/uploads/2020/10/pro.png 500w, https://it.nonaams.com/wp-content/uploads/2020/10/pro-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2020/10/pro-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2020/10/pro-55x55.png 55w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<p>L’elenco casinò non AAMS contiene il meglio oggi disponibile per i giocatori italiani. Tenendo conto di una serie di fattori come: i migliori bonus, l’eliminazione di molte regole previste in altri piattaforme e la notevole mole di giochi, sempre nuovi, messi a disposizione dai migliori sviluppatori su piazza.</p>
+<h4>Nessuna Regola né Limiti</h4>
+<p>Una delle qualit�&nbsp; più apprezzata in molti casino senza limiti di puntata è che non esiste nessuna deposito minima. Questo significa che ogni giocatore può decidere, in totale libert�&nbsp;, quanto puntare ogni volta, senza una soglia minima d’ingresso. Meno spesa, cioè, e più libert�&nbsp; di giocata.</p>
+<h4>Fornitori di Giochi Esotici</h4>
+<p>Infine, le tipologie di giochi offerti sono praticamente sterminate, e in continua evoluzione. Gli sviluppatori presenti nei <a href="/casino-online-europei/">migliori casinò online europei</a>, per fare un esempio, sfornano in continuazione grafiche e interfacce nuove ed accattivanti, per garantire una qualit�&nbsp; di gioco sempre all’altezza dei palati più fini.</p>
+<h4>Minore Divulgazione di Dati Personali</h4>
+<p>In Italia, la legge parla chiaro e, tutti gli operatori provvisti di licenza ADM, richiedono dei documenti di riconoscimento durante la registrazione. Ciò causa non poche preoccupazioni, essendo dati altamente sensibili. Iscriversi su un <a href="/casino-senza-documenti/">casino online senza documenti</a> è la soluzione ideale per i giocatori più dubbiosi. Anche in questo gli operatori non autorizzati da AAMS vengono in soccorso, infatti, sono molteplici i portali sicuri e affidabili che non richiedono l’invio di documenti.</p>
+<h4>Pagamenti Anonimi</h4>
+<p>Le modalit�&nbsp; di pagamento offerte da questi casinò non AAMS sono quasi sterminate. Di norma sono accettate carte di credito e sistemi di pagamento di varia natura. Sono poi sempre di più i cosiddetti casinò con Bitcoin, Skrill, Paysafecard capaci di garantire il massimo della privacy.</p>
+<h4>Una Grande Variet�&nbsp; di Slot non AAMS</h4>
+<p>Uno dei pro di maggior rilevanza è direttamente connesso ai giochi stessi. Non tutti i provider hanno le licenze per distribuire i propri prodotti in Italia ed essi sono dunque inaccessibili nei portali ADM. Se ci si iscrive su più piattaforme è facile notare come molte propongano gli stessi giochi. I siti slot non AAMS, invece, fanno della variet�&nbsp; il proprio motto e inseriscono nei loro portfolio slot introvabili ed inedite nel mercato italiano.</p>
+<h3 style="text-align: center;">Svantaggi dei Casinò online Senza Licenza AAMS</h3>
+<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%20200'%3E%3C/svg%3E" alt="svantaggi dei casinò online non AAMS legali" width="200" height="200" class="alignright size-full wp-image-713" data-lazy-srcset="https://it.nonaams.com/wp-content/uploads/2020/10/contro.png 500w, https://it.nonaams.com/wp-content/uploads/2020/10/contro-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2020/10/contro-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2020/10/contro-55x55.png 55w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/10/contro.png"><noscript><img decoding="async" src="https://it.nonaams.com/wp-content/uploads/2020/10/contro.png" alt="svantaggi dei casinò online non AAMS legali" width="200" height="200" class="alignright size-full wp-image-713" srcset="https://it.nonaams.com/wp-content/uploads/2020/10/contro.png 500w, https://it.nonaams.com/wp-content/uploads/2020/10/contro-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2020/10/contro-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2020/10/contro-55x55.png 55w" sizes="(max-width: 200px) 100vw, 200px" /></noscript>
+<p>Come ci sono vantaggi, bisogna tenere in conto anche l‘altro lato della medaglia. Anche i migliori casinò non AAMS infatti non godono di certi vantaggi che possiamo trovare su quelle italiane. A partire da una certa tutela legale fino ai limitati metodi di pagamento.</p>
+<h4>Non Accettano Depositi e Prelievi via PayPal</h4>
+<p>Purtroppo, al momento, non ci sono casinò non AAMS PayPal per gli italiani. Questo metodo di pagamento non può quindi essere utilizzato. I principali circuiti di carte di credito e debito sono comunque garantiti, oltre a sistemi alternativi a PayPal e le criptovalute.</p>
+<h4>Licenza eGaming di Curacao</h4>
+<p>L’eGaming Authority ospita da tempo un efficiente servizio di licenze per il gioco online. Quindi, i Casinò con licenza di Curacao sono regolari anche se spesso i giocatori italiani non si fidano. Molti gruppi del settore sono attratti, oltre che dalle sue bellezze, da un regime fiscale vantaggioso.</p>
+<h4>Infine il Rischio</h4>
+<p>Purtroppo, alcuni siti web affiliati raccomando casinò truffa. Bisogna stare attenti, affidandosi solo ai siti internet ufficiali e cercando, al loro interno, la licenza, che deve essere obbligatoriamente resa esplicita. In caso di dubbi, sempre meglio contattare i servizi dei casinò più noti, dotati di una chat live e di numeri di telefono e mail.</p>
+<h4>Tornare alla Dipendenza</h4>
+<p>Non avendo limiti stringenti imposti da un’autorit�&nbsp;, alcuni giocatori potrebbe avere <a href="http://www.idoctors.it/patologia-dipendenza-da-gioco-d-azzardo-26881" target="_blank" rel="noopener">problemi legati alla dipendenza</a>. Per questo motivo, oltre alla responsabilit�&nbsp; individuale (si gioca per divertirsi e stare bene), molti casinò online hanno pagine dedicate al gioco responsabile con consigli e test di autovalutazione.</p>
+<h4>Aumento dei Debiti</h4>
+<p>Potrebbe verificarsi inoltre un aumento dei <a href="https://www.laleggepertutti.it/291063_debiti-di-gioco-come-uscirne" target="_blank" rel="noopener">debiti del singolo giocatore</a>. In questo caso, sia attraverso le pagine dedicate dei siti dei casinò online che utilizzando le chat di assistenza, normalmente attive 24 ore su 24, 7 giorni su 7, si può ottenere aiuto per il debito di gioco.</p>
+<h4>Più Difficile Prelevare le Vincite</h4>
+<p>Nei casinò online stranieri i tempi per prelevare le proprie vincite potrebbero allungarsi. In molti casi la modalit�&nbsp; di pagamento selezionata richiede più giorni perché deve transitare dall’estero. Il consiglio è molto semplice: prima di scegliere un casinò online leggere sempre le condizioni.</p>
+</div>
+<div class="section text-area" style="background-position:center top; background-size:auto; background-repeat:no-repeat; ">
+<h2 id="giochi">I Giochi più Popolari sui Casinò Non AAMS</h2>
+<img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20350%20350'%3E%3C/svg%3E" alt="giochi da giocare nei casinò senza AAMS" class="alignleft size-full width=" 350"="" height="350" wp-image-936"="" data-lazy-srcset="https://it.nonaams.com/wp-content/uploads/2020/11/giochi-non-aams.png 700w, https://it.nonaams.com/wp-content/uploads/2020/11/giochi-non-aams-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2020/11/giochi-non-aams-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2020/11/giochi-non-aams-55x55.png 55w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/11/giochi-non-aams.png"><noscript><img decoding="async" src="https://it.nonaams.com/wp-content/uploads/2020/11/giochi-non-aams.png" alt="giochi da giocare nei casinò senza AAMS" class="alignleft size-full width="350" height="350" wp-image-936" srcset="https://it.nonaams.com/wp-content/uploads/2020/11/giochi-non-aams.png 700w, https://it.nonaams.com/wp-content/uploads/2020/11/giochi-non-aams-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2020/11/giochi-non-aams-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2020/11/giochi-non-aams-55x55.png 55w" sizes="(max-width: 350px) 100vw, 350px" /></noscript>
+<p>Chi si trova a giocare sui casinò non AAMS si apre a un’infinit�&nbsp; di <a href="/giochi-senza-aams/">giochi</a>: da quelli da tavolo alle carte, dalle slot machine fino ai casinò live, che consentono di entrare in contatto con un vero croupier, come se si fosse a un casinò di Las Vegas, la perla Usa del gioco, o a Venezia, la capostipite mondiale dei casinò.</p>
+<h3>Slot Online</h3>
+<p><a href="/giochi-senza-aams/slot/">I siti di slot non AAMS</a> sono una miniera di possibilit�&nbsp; per gli amanti del settore. Si trova davvero di tutto. Il jackpot è spesso molto invitante, in media al di sopra delle altre tipologie del mercato, e questo attira un numero sempre maggiore di giocatori italiani.</p>
+<h3>Bingo Online</h3>
+<p>Il bingo nei casinò internazionali offre la possibilit�&nbsp; di annullare l’auto esclusione AAMS. Questo consente quindi a ogni giocatore, in ogni momento, di avere per sé il totale controllo sul livello di gioco e di spesa che si vuole effettuare. La scelta, quindi, resta sempre nelle mani di una sola persona: il giocatore.</p>
+<h3>Poker Online</h3>
+<p><a href="/giochi-senza-aams/poker/">Le poker room non registrare con AAMS</a> rappresentano oggi un settore in grande espansione per i casinò internazionali che accettano giocatori italiani. Si può sfidare una vasta gamma di altri player, decidere in autonomia quanto puntare e trovare il metodo migliore per aumentare le proprie possibilit�&nbsp; di vittoria, mano dopo mano.</p>
+<h3>Blackjack Online</h3>
+<p>Anche il caro, vecchio “Ventuno”, gioco di carte conosciuto a livello internazionale come blackjack, è disponibile da tempo nel settore offshore. Il blackjack non collegato ad AAMS ha le stesse regole degli altri tavoli, ma con una maggiore libert�&nbsp; nelle puntate, nella possibilit�&nbsp; di giocare senza deposito e di sfidare il banco in modalit�&nbsp; casinò live.</p>
+<h3>Roulette Online</h3>
+<p>Infine, la roulette. Ci sono decine di varianti, avvincenti e coinvolgenti, soprattutto quando è possibile utilizzare la modalit�&nbsp; live. La roulette online è infatti, con ogni probabilit�&nbsp;, il miglior gioco con croupier dal vivo per i giocatori non AAMS per qualit�&nbsp; e quantit�&nbsp; delle possibili vincite, free spins, bonus di benvenuto e ottimi payback.</p>
+</div>
+<div class="section text-area" style="background-position:center top; background-size:auto; background-repeat:no-repeat; ">
+<h2 id="pagamenti">Metodi di Pagamento Accettati sui Casino non ADM</h2>
+<p>L’ennesima differenza tra operatori con licenza italiana e quelli non autorizzati da AAMS sta nei metodi di pagamento proposti. Infatti, se tra le proposte disponibili in questo campo sui portali AAMS, si trovano solo i più comuni, all’interno dei siti casino no ADM è anche possibile usare diverse criptovalute. La loro proposta risulta, quindi, ancora più completa e al passo con i tempi.</p>
+<ul class="style3 features-small__row features-small ">
+<li class="features-small__el steps-header__item"><a href="/casino-con-paypal-senza-aams/" class="fa fa-solid fa-dice">Casino Non AAMS con PayPal</a></li>
+<li class="features-small__el steps-header__item"><a href="/casino-con-skrill-senza-aams/" class="fa fa-solid fa-dice">Casino Non AAMS con Skrill</a></li>
+<li class="features-small__el steps-header__item"><a href="/casino-con-paysafecard-senza-aams/" class="fa fa-solid fa-dice">Casino Non AAMS con PaySafeCard</a></li>
+<li class="features-small__el steps-header__item"><a href="/casino-bitcoin/" class="fa fa-solid fa-dice">Casino con Bitcoin</a></li>
+</ul>
+</div>
+<div class="section" id="join" itemscope="" itemtype="http://schema.org/HowTo" itemid="#join">
+<h2 id="come" itemprop="name" class="white-title tac">Come Giocare Sul Miglior Casino Online Non AAMS </h2>
+<p itemprop="description" class="slide-container slide-container--white mt-1 taj text-center">
+Dopo un’infarinatura sui portali affidabili privi di licenza italiana, è giusto il momento di iscriversi. La procedura per accedere a questi siti non è molto diversa da quella standard, proposta anche in quelli con certificazione ADM. Ma è sempre bene rivedere i passaggi, per poter iniziare a divertirsi sui miglior casino senza AAMS per gli italiani nel modo più semplice possibile.
+</p>
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" alt="Come Giocare Sul Miglior Casino Online Non AAMS" class="aligncenter size-full" itemprop="image" width="300" height="300" data-lazy-srcset="https://it.nonaams.com/wp-content/uploads/2023/05/come-giocare-sul-miglior-casino-online-non-aams.png 1000w, https://it.nonaams.com/wp-content/uploads/2023/05/come-giocare-sul-miglior-casino-online-non-aams-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2023/05/come-giocare-sul-miglior-casino-online-non-aams-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2023/05/come-giocare-sul-miglior-casino-online-non-aams-768x768.png 768w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/05/come-giocare-sul-miglior-casino-online-non-aams.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2023/05/come-giocare-sul-miglior-casino-online-non-aams.png" alt="Come Giocare Sul Miglior Casino Online Non AAMS" class="aligncenter size-full" itemprop="image" width="300" height="300" srcset="https://it.nonaams.com/wp-content/uploads/2023/05/come-giocare-sul-miglior-casino-online-non-aams.png 1000w, https://it.nonaams.com/wp-content/uploads/2023/05/come-giocare-sul-miglior-casino-online-non-aams-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2023/05/come-giocare-sul-miglior-casino-online-non-aams-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2023/05/come-giocare-sul-miglior-casino-online-non-aams-768x768.png 768w" sizes="(max-width: 300px) 100vw, 300px" /></noscript> <div class="steps-header mv-2 custom-row-flex">
+<div class="steps-header__item custom-row-flex__el fa-angle-double-right btn-box">
+<span>Tempo Richiesto:</span> <span itemprop="totalTime" content="PT5M">5 Minuti</span>
+</div>
+<div class="steps-header__item custom-row-flex__el fa-angle-double-right btn-box" itemprop="tool" itemscope="" itemtype="http://schema.org/HowToTool">
+<span>Strumenti Necessari:</span> <span itemprop="name">Mobile / PC</span>
+</div>
+<div class="steps-header__item custom-row-flex__el fa-angle-double-right btn-box" itemprop="supply" itemscope="" itemtype="http://schema.org/HowToSupply">
+<span>Requisiti Extra:</span> <span itemprop="name">Internet / Soldi</span>
+</div>
+</div>
+<div class="custom-row-flex custom-row-flex--sm">
+<div id="howtostep1" itemid="#howtostep1" itemprop="step" itemscope="itemscope" itemtype="http://schema.org/HowToStep" class="custom-row-flex__el custom-row-flex__el--col-sm-12 custom-row-flex__el--col-md-6 custom-row-flex__el--col-lg-4 custom-row-flex__el--col-xl-3">
+<div class="step_card">
+<meta itemprop="position" content="1">
+<meta itemprop="url" content="https://it.nonaams.com/#howtostep1">
+<div class="step_header">
+<span class="step_card__index">PASSO 1</span>
+<h3 itemprop="name" class="step_card__title tac">Controlla la Nostra Lista di Casino Senza AAMS</h3>
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20250%20250'%3E%3C/svg%3E" alt="Controlla la Lista" class="step_card__photo" itemprop="image" width="250px" height="250px" data-lazy-srcset="https://it.nonaams.com/wp-content/uploads/2023/05/controlla-la-lista.png 1000w, https://it.nonaams.com/wp-content/uploads/2023/05/controlla-la-lista-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2023/05/controlla-la-lista-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2023/05/controlla-la-lista-768x768.png 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/05/controlla-la-lista.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2023/05/controlla-la-lista.png" alt="Controlla la Lista" class="step_card__photo" itemprop="image" width="250px" height="250px" srcset="https://it.nonaams.com/wp-content/uploads/2023/05/controlla-la-lista.png 1000w, https://it.nonaams.com/wp-content/uploads/2023/05/controlla-la-lista-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2023/05/controlla-la-lista-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2023/05/controlla-la-lista-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript> </div>
+<div class="step_card__body" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/HowToDirection">
+<p itemprop="text" class="slide-container tac">Il primo step è quello di individuare il sito casino non AAMS giusto. La nostra lista è qui per questo e rende la selezione molto più facile. I nostri esperti hanno elencato alcuni dei migliori operatori presenti al momento e le brevi recensioni scritte sopra sono un ottimo modo per farsi un’idea generale.
+</p>
+</div>
+</div>
+</div>
+<div id="howtostep2" itemid="#howtostep2" itemprop="step" itemscope="itemscope" itemtype="http://schema.org/HowToStep" class="custom-row-flex__el custom-row-flex__el--col-sm-12 custom-row-flex__el--col-md-6 custom-row-flex__el--col-lg-4 custom-row-flex__el--col-xl-3">
+<div class="step_card">
+<meta itemprop="position" content="2">
+<meta itemprop="url" content="https://it.nonaams.com/#howtostep2">
+<div class="step_header">
+<span class="step_card__index">PASSO 2</span>
+<h3 itemprop="name" class="step_card__title tac">Scegli Alcuni Casino da Valutare</h3>
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20250%20250'%3E%3C/svg%3E" alt="Scegli il Casino" class="step_card__photo" itemprop="image" width="250px" height="250px" data-lazy-srcset="https://it.nonaams.com/wp-content/uploads/2023/05/scegli-il-casino.png 1000w, https://it.nonaams.com/wp-content/uploads/2023/05/scegli-il-casino-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2023/05/scegli-il-casino-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2023/05/scegli-il-casino-768x768.png 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/05/scegli-il-casino.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2023/05/scegli-il-casino.png" alt="Scegli il Casino" class="step_card__photo" itemprop="image" width="250px" height="250px" srcset="https://it.nonaams.com/wp-content/uploads/2023/05/scegli-il-casino.png 1000w, https://it.nonaams.com/wp-content/uploads/2023/05/scegli-il-casino-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2023/05/scegli-il-casino-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2023/05/scegli-il-casino-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript> </div>
+<div class="step_card__body" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/HowToDirection">
+<p itemprop="text" class="slide-container tac">Dopo aver esaminato la lista e letto le review, si dovrebbe avere un’idea più chiara di quale tra i tanti casinò può fare al caso proprio. Il secondo passaggio, prima di iniziare a giocare, dovrebbe sempre includere una ricerca più approfondita fatta sulla piattaforma stessa da parte del giocatore. Considerando i giochi proposti nella totalit�&nbsp;, bonus, ecc.
+</p>
+</div>
+</div>
+</div>
+<div id="howtostep3" itemid="#howtostep3" itemprop="step" itemscope="itemscope" itemtype="http://schema.org/HowToStep" class="custom-row-flex__el custom-row-flex__el--col-sm-12 custom-row-flex__el--col-md-6 custom-row-flex__el--col-lg-4 custom-row-flex__el--col-xl-3">
+<div class="step_card">
+<meta itemprop="position" content="3">
+<meta itemprop="url" content="https://it.nonaams.com/#howtostep3">
+<div class="step_header">
+<span class="step_card__index">PASSO 3</span>
+<h3 itemprop="name" class="step_card__title tac">Analizza Aspetti Positivi e Negativi</h3>
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20250%20250'%3E%3C/svg%3E" alt="Analizza Pro e Contro" class="step_card__photo" itemprop="image" width="250px" height="250px" data-lazy-srcset="https://it.nonaams.com/wp-content/uploads/2023/05/analizza-pro-e-contro.png 1000w, https://it.nonaams.com/wp-content/uploads/2023/05/analizza-pro-e-contro-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2023/05/analizza-pro-e-contro-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2023/05/analizza-pro-e-contro-768x768.png 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/05/analizza-pro-e-contro.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2023/05/analizza-pro-e-contro.png" alt="Analizza Pro e Contro" class="step_card__photo" itemprop="image" width="250px" height="250px" srcset="https://it.nonaams.com/wp-content/uploads/2023/05/analizza-pro-e-contro.png 1000w, https://it.nonaams.com/wp-content/uploads/2023/05/analizza-pro-e-contro-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2023/05/analizza-pro-e-contro-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2023/05/analizza-pro-e-contro-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript> </div>
+<div class="step_card__body" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/HowToDirection">
+<p itemprop="text" class="slide-container tac">Ogni sito arriva con pro e contro. Direttamente collegato con il passaggio precedente, il terzo step necessario è sempre quello di considerare attentamente ogni benefit proposto. Leggere le policy, informarsi sui bonus nelle pagine dedicate, ma soprattutto cercare di capire che livello di sicurezza è garantito dall’operatore. Sono tutti aspetti da non ignorare e da tenere bene e a mente prima di procedere.
+</p>
+</div>
+</div>
+</div>
+<div id="howtostep4" itemid="#howtostep4" itemprop="step" itemscope="itemscope" itemtype="http://schema.org/HowToStep" class="custom-row-flex__el custom-row-flex__el--col-sm-12 custom-row-flex__el--col-md-6 custom-row-flex__el--col-lg-4 custom-row-flex__el--col-xl-3">
+<div class="step_card">
+<meta itemprop="position" content="4">
+<meta itemprop="url" content="https://it.nonaams.com/#howtostep4">
+<div class="step_header">
+<span class="step_card__index">PASSO 4</span>
+<h3 itemprop="name" class="step_card__title tac">Registrati e Divertiti con Giochi Preferiti</h3>
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20250%20250'%3E%3C/svg%3E" alt="Registrati e Divertiti" class="step_card__photo" itemprop="image" width="250px" height="250px" data-lazy-srcset="https://it.nonaams.com/wp-content/uploads/2023/05/registrati-e-divertiti.png 1000w, https://it.nonaams.com/wp-content/uploads/2023/05/registrati-e-divertiti-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2023/05/registrati-e-divertiti-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2023/05/registrati-e-divertiti-768x768.png 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2023/05/registrati-e-divertiti.png"><noscript><img src="https://it.nonaams.com/wp-content/uploads/2023/05/registrati-e-divertiti.png" alt="Registrati e Divertiti" class="step_card__photo" itemprop="image" width="250px" height="250px" srcset="https://it.nonaams.com/wp-content/uploads/2023/05/registrati-e-divertiti.png 1000w, https://it.nonaams.com/wp-content/uploads/2023/05/registrati-e-divertiti-300x300.png 300w, https://it.nonaams.com/wp-content/uploads/2023/05/registrati-e-divertiti-150x150.png 150w, https://it.nonaams.com/wp-content/uploads/2023/05/registrati-e-divertiti-768x768.png 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></noscript> </div>
+<div class="step_card__body" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/HowToDirection">
+<p itemprop="text" class="slide-container tac">Dopo aver effettuato un confronto e analisi approfondita di tutti i siti presi in considerazione, si arriva alla fase finale. Una volta scelto il casino senza licenza italiana che soddisfa le proprie necessit�&nbsp;, non resta altro che procedere alla registrazione su tale piattaforma. Si dovranno inserire, anche qui, i propri dati. Per fortuna, molti siti non ADM sono disponibili in italiano e la procedura d’iscrizione è facile ed intuitiva.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section text-area" style="background-position:center top; background-size:auto; background-repeat:no-repeat; ">
+<h2 id="depositi">Scegli il Deposito Minimo per Giocare su Casino senza ADM</h2>
+<p>Uno dei vantaggi maggiori dei casinò non AAMS riguarda i depositi effettuabili. Infatti, la maggior parte degli operatori senza licenza ADM, consentono di versare sui propri conti di gioco anche cifre molto basse. Ecco alcune delle opzioni proposte:</p>
+<ul class="style3 features-small__row features-small ">
+<li class="features-small__el steps-header__item"><a href="/casino-deposito-minimo-1-euro/" class="fa fa-solid fa-dice">Casinò senza ADM con 1€</a></li>
+<li class="features-small__el steps-header__item"><a href="/casino-deposito-minimo-2-euro/" class="fa fa-solid fa-dice">Casinò senza ADM con 2€</a></li>
+<li class="features-small__el steps-header__item"><a href="/casino-deposito-minimo-5-euro/" class="fa fa-solid fa-dice">Casinò senza ADM con 5€</a></li>
+<li class="features-small__el steps-header__item"><a href="/casino-deposito-minimo-10-euro/" class="fa fa-solid fa-dice">Casinò senza ADM con 10€</a></li>
+</ul>
+</div>
+<div class="faq-box section text-area">
+<h2 id="faq">▶️ Domande Frequenti</h2>
+<div class="item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<i class="fa fa-question"></i><h3 itemprop="name">Ci sono casinò non AAMS?</h3>
+<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Sì, esistono numerosi casinò non AAMS disponibili oggi sul web. Offrono numerosi giochi e possibilit�&nbsp; aperte anche ai giocatori italiani, che possono accedere direttamente dai propri dispositivi: personal computer, tablet, mobile. Diversi casinò offrono anche app dedicate e gratuite che si possono scaricare dai principali store online, sia per sistemi operativi Android che iOs.</p>
+</div>
+</div>
+<div class="item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<i class="fa fa-question"></i><h3 itemprop="name">Questi siti di casinò con no AAMS sono sicuri e affidabili?</h3>
+<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">I casinò non AAMS sono sicuri e affidabili. L’unica differenza, per i giocatori, è l’Authority che ha concesso la licenza: possono arrivare da diversi paesi del mondo, come Malta, UK o Curacao. Prima di dare il via libera vengono effettuati rigorosi controlli, per consentire un gioco sicuro, affidabile e fruibile nel modo migliore possibile.</p>
+</div>
+</div>
+<div class="item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<i class="fa fa-question"></i><h3 itemprop="name">Come giocare sui casinò online non AAMS?</h3>
+<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Giocare sui casinò non AAMS è molto semplice e immediato. Basta andare sul sito internet del casinò e iniziare a giocare. Spesso è necessaria una procedura d’iscrizione, piuttosto agile e veloce. Ci sono anche dei casi in cui questa non viene richiesta. Una volta iniziato a giocare, si ricevono dei bonus di benvenuto particolarmente invitanti e premianti per i giocatori.</p>
+</div>
+</div>
+<div class="item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<i class="fa fa-question"></i><h3 itemprop="name">Qual è il miglior casinò senza AAMS?</h3>
+<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">L’offerta di casinò offshore è molto varia e le caratteristiche sono pensate per le varie tipologie di giocatori: da quelli regolari e appassionati fino a chi desidera giocare di tanto in tanto. Un’ottima sintesi delle varie proposte è quella offerta da Rabona, con centinaia di opzioni differenti tra video slot, table games, giochi di carte e le opzioni live, a partire dal casinò.</p>
+</div>
+</div>
+<div class="item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<i class="fa fa-question"></i><h3 itemprop="name">È legale per i giocatori italiani non entrare in casinò no AAMS?</h3>
+<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">I casinò non AAMS sono legali anche per gli italiani. Non avere la licenza autorizzata dall’Agenzia Dogane e Monopoli non crea problemi, visto che prima di potere essere online hanno ottenuto una licenza internazionale dalle Autorit�&nbsp; straniere. Quelle più utilizzate, e quindi maggiormente disponibili, sono quelle di Malta, Slovacchia e Curacao.</p>
+</div>
+</div>
+<div class="item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<i class="fa fa-question"></i><h3 itemprop="name">Chi regola i casinò non autorizzati da ADM?</h3>
+<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Le principali autorit�&nbsp; che rilasciano licenze non AAMS hanno sede sull’isola di Curacao oppure a Malta, l’isola del Mediterraneo che si trova a due passi dalla Sicilia e che nel corso degli ultimi anni è diventata un punto di riferimento per il gioco online in tutta Europa. I casinò registrati all’estero permettono di praticare il gioco d’azzardo online senza auto esclusione hanno spesso un interfaccia in italiano, accettano euro e sono utilizzabili quindi anche dall’Italia, purchè all’interno di siti e piattaforme con licenza regolare.</p>
+</div>
+</div>
+<div class="item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<i class="fa fa-question"></i><h3 itemprop="name">I siti casinò non AAMS offrono bonus per gli italiani?</h3>
+<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">I casinò italiani non registrati con il <a href="https://www.adm.gov.it/portale/autoesclusione-dal-gioco-a-distanza-giochi" rel="noopener" target="_blank">programma di Autoesclusione</a> e ADM offrono spesso alti bonus di benvenuto, promozioni vantaggiose, quote superiori alla media di mercato e una gamma quasi infinita di giochi (dal poker alle roulette, dalle slot al blackjack, senza dimenticare le scommesse) attirano un numero sempre crescenti di giocatori e rappresentano una vera novit�&nbsp; nel settore del gioco d’azzardo online.</p>
+</div>
+</div>
+<div class="item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<i class="fa fa-question"></i><h3 itemprop="name">Perché i siti di casinò senza l'autoesclusione dell'AAMS sono così popolari?</h3>
+<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">I casinò online che non utilizzano l’autoesclusione di AAMS stanno conoscendo un vero e proprio boom tra i giocatori in Italia. La rimozione dell’auto esclusione attira sempre più persone, che vogliono giocare con maggior libert�&nbsp;, ma in un contesto di affidabilit�&nbsp; e sicurezza. I casinò online con licenza rilasciata dall’Autorit�&nbsp; Dogane e Monopoli, non consentono di rimuovere l’auto esclusione una volta richiesta.</p>
+</div>
+</div>
+<div class="item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<i class="fa fa-question"></i><h3 itemprop="name">Quali sono i sistemi di pagamento più diffusi nei casinò non AAMS?</h3>
+<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">I casinò non AAMS offrono una variet�&nbsp; di opzioni di pagamento, le più comuni delle quali sono le carte di credito Visa e Mastercard, i portafogli elettronici Skrill, Neteller e Paypal, che garantiscono un’alta sicurezza e velocit�&nbsp; di elaborazione delle transazioni, e le criptovalute, che permettono di rimanere anonimi e di trasferire denaro in modo sicuro.</p>
+</div>
+</div>
+<div class="item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<i class="fa fa-question"></i><h3 itemprop="name">Casino senza licenza AAMS sono soggetti all’autoesclusione ADM?</h3>
+<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">No, essendo portali senza licenza AAMS si tratta anche di casino senza autoesclusione AAMS, anche se questa è attiva. Se l’inibizione al gioco su operatori italiani è stata richiesta per sbaglio, ci vuole comunque del tempo per revocarla o perché questa venga rimossa. Nel mentre, ci si può quindi intrattenere sulle piattaforme non italiane senza problemi.
+</p>
+</div>
+</div>
+<div class="item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+<i class="fa fa-question"></i><h3 itemprop="name">Ci sono le differenze tra siti casino non AAMS e siti slot non AAMS? </h3>
+<div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">I siti slot non AAMS sono, nella maggior parte dei casi, interamente dedicati a questo tipo di prodotti. La variet�&nbsp; di slot machine disponibili è molto più ampia rispetto a quella proposta dagli operatori ADM. I siti di casinò non AAMS sono, invece, più generici. Ci si può intrattenere con poker, roulette, blackjack, bingo, slot e molto altro.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="container">
+<div class="contributors-wrap">
+<div id="goria" itemid="#goria" class="author-wrap wrap margin-between" itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+<link itemprop="worksFor" href="#org">
+<div class="author-left-wrap">
+<div class="author-photo-wrap"><img itemprop="image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20180%20180'%3E%3C/svg%3E" alt="Fabrizio Goria" width="180" height="180" data-lazy-src="https://it.nonaams.com/wp-content/uploads/2020/12/fabrizio-goria-300x300.png"><noscript><img itemprop="image" src="https://it.nonaams.com/wp-content/uploads/2020/12/fabrizio-goria-300x300.png" alt="Fabrizio Goria"
+                                                        width="180" height="180"></noscript></div>
+<div class="contact-wrap">
+<a class="btn-author" href="/contatti/">Contatto</a>
+<a href="/cdn-cgi/l/email-protection#84e2e5e6f6edfeedebaae3ebf6ede5c4eaebeae5e5e9f7aae7ebe9" class="btn-author contact-mailto"><i class="icon-poka icon-poka-envelope"></i></a>
+</div>
+</div>
+<div class="author-right-wrap">
+<div class="author-title">
+<p itemprop="name">
+<a href="https://it.nonaams.com/autori/fabrizio-goria/">
+Fabrizio Goria </a>
+</p>
+</div>
+<div class="author-description">
+<p itemprop="description">
+Fabrizio si è laureato alla Sapienza Universit�&nbsp; di Roma nel 2009 con un dottorato di ricerca in giornalismo. Ha iniziato la sua carriera professionale scrivendo articoli e approfondimenti sul mondo dello sport. Dopo poco ha spostato il suo interesse e ha capito che la sua vera passione erano le scommesse sportive. Ma è in seguito alle nuove modifiche legislative sul settore gambling nel 2010 che Fabrizio ha deciso di immergersi totalmente nel gioco d'azzardo e nelle scommesse. L’obiettivo era diventato quello di condividere le sue conoscenze con altri giocatori. Ha recentemente esaminato il servizio di autoesclusione italiano e messo anche in luce i suoi difetti. Inoltre Fabrizio è un esperto di Casino non AAMS, ovvero le piattaforme internazionali disponibili per i giocatori italiani. </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="footer footer-copyright">
+<div class="footer-bottom">
+<div class="container">
+<div class="widget-columns clearfix widget-count-3">
+<div id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><p>
+NonAAMS.com è un portale di gioco d'azzardo affiliato che opera in modo indipendente e non appartiene ad alcun casinò o operatore di scommesse sportive. Non forniamo alcuna informazione per scopi illegali. È solo vostra responsabilit�&nbsp; assicurarvi che vi sia permesso giocare d'azzardo secondo le leggi della vostra giurisdizione (et�&nbsp; di gioco, status legale, ecc.).Visitando il nostro sito web accetti le nostre Termini e Сondizioni e Informativa sulla Privacy.
+</p></div></div><div id="custom_html-3" class="widget_text widget widget_custom_html"><h3>Siti utili</h3><div class="textwidget custom-html-widget"><ul>
+<li><a href="https://www.adm.gov.it/portale/" target="_blank" rel="noopener">ADM (AAMS)</a></li>
+<li><a href="https://www.gamblingtherapy.org/it" target="_blank" rel="noopener">Gambling Therapy</a></li>
+<li><a href="https://www.adm.gov.it/portale/autoesclusione-dal-gioco-a-distanza-giochi" target="_blank" rel="noopener">Autoesclusione</a></li>
+</ul></div></div><div id="nav_menu-3" class="widget widget_nav_menu"><h3>Maggiori Informazioni</h3><div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-1124" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1124"><a href="/blog/">Blog</a></li>
+<li id="menu-item-3465" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3465"><a href="/contatti/">Contatti</a></li>
+</ul></div></div> </div>
+</div>
+
+</div>
+
+<div class="container">
+<p>Copyright © 2024 - NonAAMS.com</p>
+<a href="#" class="btn btn-backToTop"><i class="icon-poka icon-poka-arrow-up"></i></a>
+</div>
+
+</footer>
+</div>
+
+<script data-cfasync="false" src="js/email-decode.min.js"></script><script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/it.nonaams.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://it.nonaams.com/wp-content/cache/min/1/wp-content/themes/pokatheme_child/custom_scripts.js?ver=1711718188" id="custom-scripts-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://it.nonaams.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" id="poka-scripts-all-js-extra">
+/* <![CDATA[ */
+var ajax_var = {"url":"https:\/\/it.nonaams.com\/wp-admin\/admin-ajax.php","nonce":"4c7c719586","msg_error":"Avete gi\u00e0 votato","msg_success":"Grazie per il vostro voto!","rating_icons":{"full_star":"<span class=\"star full-star\"><i class=\"icon-poka icon-poka-full-star\"><\/i><\/span>","half_star":"<span class=\"star\"><i class=\"icon-poka icon-poka-half-star\"><\/i><\/span>","empty_star":"<span class=\"star\"><i class=\"icon-poka icon-poka-empty-star\"><\/i><\/span>"}};
+var poka_strings = {"search":"Cerca"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://it.nonaams.com/wp-content/themes/pokatheme/js/scripts.all.min.js?ver=3.4.9" id="poka-scripts-all-js" defer=""></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="js/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script> 
+
+</body></html>
